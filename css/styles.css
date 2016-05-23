@@ -222,6 +222,7 @@ footer {
   color: #FFF;
   text-decoration: none;
   overflow: hidden;
+	font-weight: normal;
 }
 
 .overlay ul li a:hover:after,
