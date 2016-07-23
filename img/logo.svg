@@ -1,0 +1,11 @@
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <defs></defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="#011240" x="0" y="0" width="50" height="50" rx="25"></rect>
+        <g id="GeoK" transform="translate(15.000000, 13.500000)">
+            <path d="M9.85498047,0.184570312 C4.42409054,0.184570312 0.021484375,4.5822564 0.021484375,10.0197195 L0.021484375,20 L19.6884766,0.184570312 L9.85498047,0.184570312 Z" id="BrightTop" fill="#FFFFFF"></path>
+            <path d="M0,20.1855469 L0,20.1855469 C0.0728109778,21.7393871 2.76065787,22.9708087 6.002073,22.9360191 L20.2402344,22.7832031 L8.80175781,11.2451172 L0,20.1855469 Z" id="ClearBottom" fill-opacity="0.601958786" fill="#C0D9D5"></path>
+        </g>
+    </g>
+</svg>
