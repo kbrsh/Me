@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  src: local('Gilroy-ExtraBold'), url(./Gilroy-ExtraBold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Moon';
+  font-style: normal;
+  src: local('Moon-Light'), url(./Moon-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  src: local('Lato-Thin'), url(./Lato-Thin.ttf) format('truetype');
+}
