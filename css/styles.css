@@ -39,6 +39,24 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 }
 
 
+#about {
+	height: 100vh;
+	width: 100vw;
+	background-color: #EBEDF0;
+	color: #131313;
+}
+
+#about h3 {
+	padding-top: 30vh;
+	font-family: 'Moon';
+	text-align: center;
+}
+
+#about p {
+	padding-top: 5vh;
+	font-family: 'Lato';
+	font-size: 1.7rem;
+}
 
 
 /* fixed header */
@@ -217,6 +235,10 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
     opacity: 1;
     bottom: 0;
   }
+}
+
+.small-container {
+	max-width: 500px;
 }
 
 
