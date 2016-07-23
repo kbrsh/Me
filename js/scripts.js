@@ -1,12 +1,12 @@
 /* Nav */
-document.querySelectorAll('.button_container').addEventListener("click", function() {
-   document.querySelectorAll('.button_container').classList.toggle('active');
-   document.querySelectorAll('.overlay').classList.toggle('open');
+document.querySelector('.button_container').addEventListener("click", function() {
+   document.querySelector('.button_container').classList.toggle('active');
+   document.querySelector('.overlay').classList.toggle('open');
  });
 
- document.querySelectorAll(".menuLink").addEventListener("click", function() {
-   document.querySelectorAll('.button_container').classList.toggle('active');
-   document.querySelectorAll('.overlay').classList.toggle('open');
+ document.querySelector(".menuLink").addEventListener("click", function() {
+   document.querySelector('.button_container').classList.toggle('active');
+   document.querySelector('.overlay').classList.toggle('open');
  });
 
 
