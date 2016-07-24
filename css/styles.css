@@ -99,25 +99,33 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	width: 100vw;
 	background-color: #EBEDF0;
 	color: #131313;
+	text-align: center;
 }
 
-#contact h3 {
+#contact h5 {
 	font-family: 'Moon';
 	text-align: center;
 }
 
-#contact-set {
-	padding-top: 1.5rem;
-	display: inline-block;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
+#contact-set img {
+	margin: 2rem;
+	display:inline-block;
+  margin:auto;
 }
 
-#contact-set img {
-	margin-right: 2rem;
+footer {
+	padding: 2vh 8vh;
 	text-align: center;
+	background-color: #131313;
+	color: #EBEDF0;
+}
+
+footer a {
+	color: white;
+}
+
+a {
+	text-decoration: none;
 }
 
 
