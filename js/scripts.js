@@ -1,3 +1,16 @@
+/* loader */
+document.body.style.overflowY = "hidden"
+setTimeout(function() {
+  document.getElementById("loader").style.opacity = "0";
+  document.body.style.overflowY = "auto"
+  setTimeout(function() {
+    document.getElementById("loader").style.display = "none";
+  }, 750);
+  // document.getElementById("loader").style.display = "none";
+}, 750);
+
+
+
 /* Nav */
 document.querySelector('.button_container').addEventListener("click", function() {
    document.querySelector('.button_container').classList.toggle('active');
@@ -23,7 +36,7 @@ var pick=~~(Math.random()*359),
   tag.innerHTML=style.replace(/\$pick/g,pick);
   document.body.appendChild(tag);
 
-
+/* smooth scroll */
   (function() {
 
        'use strict';
