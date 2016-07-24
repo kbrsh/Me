@@ -58,6 +58,39 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	font-size: 1.7rem;
 }
 
+#portfolio  {
+	min-height: 100vh;
+	width: 100vw;
+	background-color: #131313;
+	color: #EBEDF0;
+}
+
+#portfolio h3:first-of-type {
+	padding-top: 30vh;
+}
+
+#portfolio h3 {
+	font-family: 'Moon';
+	text-align: center;
+}
+
+
+.portfolio-item {
+	text-decoration: none;
+	color: #EBEDF0;
+	font-family: 'Lato';
+	font-weight: bold;
+	font-size: 2.5rem;
+	display: block;
+	padding-top: 3vh;;
+}
+
+.portfolio-item span {
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+
 
 /* fixed header */
 
