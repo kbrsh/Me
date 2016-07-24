@@ -81,10 +81,9 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	text-decoration: none;
 	color: #EBEDF0;
 	font-family: 'Lato';
-	font-weight: bold;
 	font-size: 2.5rem;
 	display: block;
-	padding-top: 3vh;;
+	padding-top: 3vh;
 }
 
 .portfolio-item span {
