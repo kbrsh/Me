@@ -84,7 +84,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
   position: absolute;
   height: 1px;
   width: 100%;
-  background: #EBEDF0;
+	background: #EBEDF0;
   -webkit-transition: all .35s ease;
   transition: all .35s ease;
 }
