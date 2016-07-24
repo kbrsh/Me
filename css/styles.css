@@ -92,6 +92,20 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	text-decoration: underline;
 }
 
+#contact {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	height: auto;
+	width: 100vw;
+	background-color: #EBEDF0;
+	color: #131313;
+}
+
+#contact h3 {
+	font-family: 'Moon';
+	text-align: center;
+}
+
 
 
 /* fixed header */

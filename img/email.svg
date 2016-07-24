@@ -1,0 +1,16 @@
+
+<svg width="54px" height="36px" viewBox="351 383 54 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <desc>Email Icon - By Kabir Shah</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="54" height="36" rx="8"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="54" height="36" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Email-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(351.000000, 383.000000)">
+        <use id="Rectangle" stroke="#131313" mask="url(#mask-2)" stroke-width="6" xlink:href="#path-1"></use>
+        <polyline id="Path-2" stroke="#131313" stroke-width="3" points="4 2 25.9296875 18.2773438 49.0273437 3.29296875"></polyline>
+        <polyline id="Path-3" stroke="#131313" points="6.95001221 21.7299805 7.29376221 28.8549805 17.2390747 28.8549805"></polyline>
+    </g>
+</svg>
