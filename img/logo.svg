@@ -1,11 +1,29 @@
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!--<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
     <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
-    <defs></defs>
-    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Background" fill="#011240" x="0" y="0" width="50" height="50" rx="25"></rect>
-        <g id="GeoK" transform="translate(15.000000, 13.500000)">
-            <path d="M9.85498047,0.184570312 C4.42409054,0.184570312 0.021484375,4.5822564 0.021484375,10.0197195 L0.021484375,20 L19.6884766,0.184570312 L9.85498047,0.184570312 Z" id="BrightTop" fill="#FFFFFF"></path>
-            <path d="M0,20.1855469 L0,20.1855469 C0.0728109778,21.7393871 2.76065787,22.9708087 6.002073,22.9360191 L20.2402344,22.7832031 L8.80175781,11.2451172 L0,20.1855469 Z" id="ClearBottom" fill-opacity="0.601958786" fill="#C0D9D5"></path>
+<!--    <defs></defs>-->
+<!--    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">-->
+<!--        <rect id="Background" fill="#011240" x="0" y="0" width="50" height="50" rx="25"></rect>-->
+<!--        <g id="GeoK" transform="translate(15.000000, 13.500000)">-->
+<!--            <path d="M9.85498047,0.184570312 C4.42409054,0.184570312 0.021484375,4.5822564 0.021484375,10.0197195 L0.021484375,20 L19.6884766,0.184570312 L9.85498047,0.184570312 Z" id="BrightTop" fill="#FFFFFF"></path>-->
+<!--            <path d="M0,20.1855469 L0,20.1855469 C0.0728109778,21.7393871 2.76065787,22.9708087 6.002073,22.9360191 L20.2402344,22.7832031 L8.80175781,11.2451172 L0,20.1855469 Z" id="ClearBottom" fill-opacity="0.601958786" fill="#C0D9D5"></path>-->
+<!--        </g>-->
+<!--    </g>-->
+<!--</svg>-->
+
+<svg width="1000px" height="1000px" viewBox="-912 200 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#2FF799" offset="0%"></stop>
+            <stop stop-color="#53C1FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Logo-Rounded" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-912.000000, 200.000000)">
+        <rect id="Background" fill="url(#linearGradient-1)" x="0" y="0" width="1000" height="1000" rx="15"></rect>
+        <g id="GeoK" transform="translate(303.000000, 273.000000)">
+            <path d="M35.4224248,0.691281363 C16.0964696,0.691350336 0.429699569,16.3645258 0.429714448,35.6873017 L0.429992676,397 L393.77002,0.690002441 L35.4224248,0.691281363 Z" id="BrightTop" fill="#FFFFFF"></path>
+            <path d="M0,397 L1.03831613,419.713117 C1.92108952,439.023744 18.3019258,454.678101 37.6267595,454.678101 L393.77002,454.678101 L176.057312,220.034302 L0,397 Z" id="ClearBottom" fill-opacity="0.7" fill="#C7CECD"></path>
         </g>
     </g>
 </svg>
