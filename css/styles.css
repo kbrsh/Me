@@ -137,6 +137,12 @@ a {
 	left: 5%;
 	top: 5%;
 }
+
+#logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
 /* Nav */
 .button_container {
   position: absolute;
