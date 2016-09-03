@@ -239,7 +239,7 @@ a {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 50px;
+  font-size: 4rem;
   font-family: 'Moon', serif;
   letter-spacing: 10px;
   text-align: center;
@@ -257,7 +257,7 @@ a {
 .overlay ul li {
   display: block;
   height: 25%;
-  height: calc(100% / 5);
+  height: calc(100% / 6);
   min-height: 50px;
   position: relative;
   opacity: 0;
