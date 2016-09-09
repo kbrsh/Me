@@ -93,8 +93,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 }
 
 #contact {
-	padding-top: 10vh;
-	padding-bottom: 10vh;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	height: auto;
 	width: 100vw;
 	background-color: #EBEDF0;
