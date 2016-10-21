@@ -36,6 +36,23 @@ var pick=~~(Math.random()*359),
   tag.innerHTML=style.replace(/\$pick/g,pick);
   document.body.appendChild(tag);
 
+
+// Paralax images
+document.addEventListener("scroll", function(e) {
+  var els = document.getElementsByClassName("lax-img");
+  var scrollTop = document.body.scrollTop;
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    var elemTop = el.getBoundingClientRect().top;
+    var elemBottom = el.getBoundingClientRect().bottom;
+    var isVisible = (elemTop <= window.innerHeight) && (elemBottom >= 0);
+    if (isVisible) {
+      var calc = (scrollTop + window.innerHeight - el.offsetTop - 100) / 4;
+      el.style.transform = 'translateY(-' + calc + 'px)'
+    }
+  }
+
+});
 /* smooth scroll */
   (function() {
 
