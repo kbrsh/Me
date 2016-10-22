@@ -118,6 +118,11 @@ p {
 }
 
 
+#contact {
+	height: 100vh;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
 
 
 /*Make it dark*/
