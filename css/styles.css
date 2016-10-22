@@ -21,113 +21,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	color: #EBEDF0;
 }
 
-.head {
-	font-family: 'Gilroy';
-	font-size: 10rem;
-}
-
-.subhead {
-	font-family: 'Moon';
-}
-
-.bottom-arrow {
-	x-index: 100;
-	position: absolute;
-	bottom: 5%;
-	left: 50%;
-	transform: translateX(-50%);
-	/*background: transparent url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSIyNXB4IiB2aWV3Qm94PSI0NDMgNjMz IDY0IDI1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y MDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxp bmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOSAoMzE2NjcpIC0gaHR0 cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPGRlZnM+ PC9kZWZzPgogICAgPHBvbHlsaW5lIGlkPSJEb3duLUFycm93IiBzdHJva2U9IiNF QkVERjAiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgcG9pbnRzPSI0NDQg NjM0IDQ3NS4xMTMyODEgNjU3LjEwMTU2MiA1MDYuMDAzOTA2IDYzNCI+PC9wb2x5 bGluZT4KPC9zdmc+Cg==') no-repeat center center;*/
-}
-
-
-#about {
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-	height: auto;
-	width: 100vw;
-	background-color: #EBEDF0;
-	color: #131313;
-}
-
-#about h3 {
-	font-family: 'Moon';
-	text-align: center;
-}
-
-#about p {
-	padding-top: 5vh;
-	font-family: 'LatoLight';
-	font-weight: bolder;
-	font-size: 1.7rem;
-}
-
-
-#portfolio  {
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-	height: auto;
-	width: 100vw;
-	background-color: #131313;
-	color: #EBEDF0;
-}
-
-
-#portfolio h3 {
-	font-family: 'Moon';
-	text-align: center;
-}
-
-
-.portfolio-item {
-	text-decoration: none;
-	color: #EBEDF0;
-	font-family: 'Lato';
-	font-size: 2.5rem;
-	display: block;
-	padding-top: 3vh;
-}
-
-.portfolio-item span {
-	text-transform: uppercase;
-	text-decoration: underline;
-}
-
-#contact {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-	height: auto;
-	width: 100vw;
-	background-color: #EBEDF0;
-	color: #131313;
-	text-align: center;
-}
-
-#contact h5 {
-	font-family: 'Moon';
-	text-align: center;
-}
-
-#contact-set img {
-	margin: 2rem;
-	display:inline-block;
-  margin:auto;
-}
-
-footer {
-	padding: 2vh 8vh;
-	text-align: center;
-	background-color: #131313;
-	color: #EBEDF0;
-}
-
-footer a {
-	color: white;
-}
-
-a {
-	text-decoration: none;
-}
-
 
 /* fixed header */
 
@@ -145,7 +38,7 @@ a {
 }
 /* Nav */
 .button_container {
-  position: absolute;
+  position: fixed;
   width: 30px;
   height: 25px;
   z-index: 100;
@@ -314,9 +207,6 @@ a {
   }
 }
 
-.small-container {
-	max-width: 500px;
-}
 
 /* loader */
 
