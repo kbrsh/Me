@@ -86,6 +86,10 @@ p {
 	height: 200px;
 }
 
+.visit {
+	margin-left: 0;
+}
+
 .colicious {
 	background: #E43956;
 }
