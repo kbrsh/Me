@@ -105,6 +105,15 @@ p {
 	color: #1098F7;
 }
 
+.ice .project-title:hover {
+	color: #50FFDF;
+}
+
+.lock .project-title:hover {
+	color: #00D9C0;
+}
+
+
 .dark {
 	background: #1B1D1E;
 	color: #f5f5f5;
