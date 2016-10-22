@@ -50,9 +50,19 @@ document.addEventListener("scroll", function(e) {
   // }
 
 
-  if(document.body.scrollTop > document.getElementById("about").clientHeight + 300) {
+  function elementInViewport(el) {
+      var elemTop = el.getBoundingClientRect().top;
+      var elemBottom = el.getBoundingClientRect().bottom;
+
+      var isVisible = (elemTop < window.innerHeight) && (elemBottom >= 0);
+      return isVisible;
+  }
+
+  if(elementInViewport(document.getElementById("projects"))) {
     document.body.classList.add("dark");
-  } else if(document.body.scrollTop < document.getElementById("about").clientHeight + 300) {
+  } else if(elementInViewport(document.getElementById("about"))) {
+    document.body.classList.remove("dark");
+  } else if(elementInViewport(document.getElementById("contact"))) {
     document.body.classList.remove("dark");
   }
 
