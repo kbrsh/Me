@@ -60,6 +60,9 @@ p {
 
 /*Projects*/
 
+#projects {
+	height: auto;
+}
 /* fixed header */
 
 /* logo */
