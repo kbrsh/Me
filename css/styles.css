@@ -369,16 +369,6 @@ footer {
 	align-items: center;
 }
 
-#footer-logo {
-	height: 75px;
-	width: 75px;
-	border-radius: 10px;
-}
-
-#footer-desc {
-	font-size: 2.5rem;
-}
-
 #footer-name, #footer-madeby {
 	margin-bottom: 0;
 	margin-top: 0;
@@ -386,4 +376,19 @@ footer {
 
 #footer-name {
 	font-family: "Gilroy-ExtraBold";
+}
+
+#footer-desc {
+	font-size: 2.5rem;
+}
+
+#footer-logo {
+	height: 75px;
+	width: 75px;
+	border-radius: 10px;
+}
+
+#footer-link {
+	color: #f5f5f5;
+	text-decoration: none;
 }
