@@ -50,9 +50,9 @@ document.addEventListener("scroll", function(e) {
   // }
 
 
-  if(document.body.scrollTop > document.getElementById("about").clientHeight + 200) {
+  if(document.body.scrollTop > document.getElementById("about").clientHeight + 300) {
     document.body.classList.add("dark");
-  } else if(document.body.scrollTop < document.getElementById("about").clientHeight + 200) {
+  } else if(document.body.scrollTop < document.getElementById("about").clientHeight + 300) {
     document.body.classList.remove("dark");
   }
 
