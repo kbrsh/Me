@@ -296,8 +296,8 @@ p {
 }
 
 .fadeIn {
-	-webkit-animation: fadeInTop .5s ease forwards;
-  animation: fadeInTop .5s ease forwards;
+	-webkit-animation: fadeInTop 1s ease;
+  animation: fadeInTop 1s ease;
 }
 
 
