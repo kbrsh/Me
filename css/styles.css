@@ -68,6 +68,12 @@ p {
 	background: transparent;
 }
 
+.projects-container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .project {
 	height: auto;
 	margin: 7rem;
