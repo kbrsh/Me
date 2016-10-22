@@ -355,3 +355,14 @@ p {
 		transform: scale(1.1);
 	}
 }
+
+
+/* Footer */
+footer {
+	position: absolute;
+}
+
+#footer-content {
+	display: flex;
+	flex-direction: row;
+}
