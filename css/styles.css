@@ -3,7 +3,7 @@
 body {
 	overflow-x: hidden;
 	height: 100%;
-	background: #C7D4D9;
+	background: #1B1D1E;
 	transition: all 0.5s ease;
 }
 
@@ -83,7 +83,7 @@ p {
 }
 
 .colicious {
-	background: #E78999;
+	background: #E43956;
 }
 /* fixed header */
 
