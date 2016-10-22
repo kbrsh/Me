@@ -74,15 +74,14 @@ p {
 	background: transparent;
 	color: #f5f5f5;
 	text-align: left;
+	font-size: 3rem;
 }
 
-.project-head {
-	font-size: 4.5rem;
+.project-title {
+	color: #f5f5f5;
+	font-weight: bold;
 }
-.project-desc {
-	font-size: 3rem;
-	margin-left: 0;
-}
+
 
 .project-img {
 	height: 200px;
