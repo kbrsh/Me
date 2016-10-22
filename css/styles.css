@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	font-family: "Gilroy-Light";
+	margin: 1.5rem;
+}
+
+.small-container {
+	max-width: 600px;
 }
 
 #hero {
@@ -48,8 +53,7 @@ p {
 
 #about {
 	color: #eee;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	height: auto;
 }
 
 /* fixed header */
