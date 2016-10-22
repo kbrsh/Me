@@ -54,9 +54,9 @@ document.addEventListener("scroll", function(e) {
 
 
   if(document.body.scrollTop > document.getElementById("about").clientHeight + 200) {
-    document.body.classList.add("colicious");
+    document.body.classList.add("dark");
   } else if(document.body.scrollTop < document.getElementById("about").clientHeight + 200) {
-    document.body.classList.remove("colicious");
+    document.body.classList.remove("dark");
   }
 
 });
