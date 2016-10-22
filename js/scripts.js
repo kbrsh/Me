@@ -53,10 +53,10 @@ document.addEventListener("scroll", function(e) {
   }
 
 
-  if(document.body.scrollTop > document.getElementById("about").clientHeight) {
-    document.body.classList.add("snip-color");
-  } else if(document.body.scrollTop < document.getElementById("about").clientHeight) {
-    document.body.classList.remove("snip-color");
+  if(document.body.scrollTop > document.getElementById("about").clientHeight + 100) {
+    document.body.classList.add("colicious");
+  } else if(document.body.scrollTop < document.getElementById("about").clientHeight + 100) {
+    document.body.classList.remove("colicious");
   }
 
 });
