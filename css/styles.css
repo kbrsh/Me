@@ -82,6 +82,10 @@ p {
 	margin-left: 0;
 }
 
+.project-img {
+	height: 200px;
+}
+
 .colicious {
 	background: #E43956;
 }
