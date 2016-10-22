@@ -62,11 +62,12 @@ p {
 
 #projects {
 	height: auto;
+	background: transparent;
 }
 
 .project {
 	height: 100vh;
-	width: 100%;
+	background: transparent;
 }
 
 .colicious {
