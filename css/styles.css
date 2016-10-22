@@ -56,7 +56,8 @@ p {
 	color: #888888;
 	height: 100vh;
 	font-size: 2rem;
-	padding: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 /*Projects*/
@@ -66,10 +67,11 @@ p {
 	margin: 0;
 	padding: 0;
 	background: transparent;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .projects-container {
-	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 }
