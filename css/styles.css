@@ -313,6 +313,8 @@ p {
 .fadeIn {
 	-webkit-animation: fadeInTop 1s ease;
   animation: fadeInTop 1s ease;
+	-webkit-animation-delay: .5s;
+  animation-delay: .5s;
 }
 
 
