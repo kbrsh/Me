@@ -86,11 +86,16 @@ p {
 .project-title {
 	color: #f5f5f5;
 	font-weight: bold;
+	transition: all .2s ease;
 }
 
 
 .project-img {
 	height: 200px;
+}
+
+.colicious .project-title:hover {
+	color: #E43956;
 }
 
 .dark {
