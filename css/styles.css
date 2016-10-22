@@ -294,6 +294,11 @@ p {
   }
 }
 
+.fadeIn {
+	-webkit-animation: fadeInTop .5s ease forwards;
+  animation: fadeInTop .5s ease forwards;
+}
+
 
 /* loader */
 
