@@ -53,10 +53,10 @@ document.addEventListener("scroll", function(e) {
   }
 
 
-  if(document.body.scrollTop > document.getElementById("hero").clientHeight) {
-    document.body.classList.add("about-color");
-  } else if(document.body.scrollTop < document.getElementById("hero").clientHeight) {
-    document.body.classList.remove("about-color");
+  if(document.body.scrollTop > document.getElementById("about").clientHeight) {
+    document.body.classList.add("snip-color");
+  } else if(document.body.scrollTop < document.getElementById("about").clientHeight) {
+    document.body.classList.remove("snip-color");
   }
 
 });
