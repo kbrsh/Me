@@ -374,5 +374,14 @@ footer {
 }
 
 #footer-desc {
-	
+	font-size: 2rem;
+}
+
+#footer-name, #footer-madeby {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#footer-name {
+	font-family: "Gilroy-ExtraBold";
 }
