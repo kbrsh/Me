@@ -64,6 +64,11 @@ p {
 	height: auto;
 }
 
+.project {
+	height: 100vh;
+	width: 100%;
+}
+
 .colicious {
 	background: #DD304D;
 }
