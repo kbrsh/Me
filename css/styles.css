@@ -113,6 +113,10 @@ p {
 	color: #00D9C0;
 }
 
+.wing .project-title:hover {
+	color: #3A44B9;
+}
+
 
 .dark {
 	background: #1B1D1E;
