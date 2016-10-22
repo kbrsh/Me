@@ -51,11 +51,7 @@ document.addEventListener("scroll", function(e) {
 
 
   function elementInViewport(el) {
-      var elemTop = el.getBoundingClientRect().top;
-      var elemBottom = el.getBoundingClientRect().bottom;
-
-      var isVisible = (elemTop < window.innerHeight) && (elemBottom >= 0);
-      return isVisible;
+      return (el.getBoundingClientRect().top < window.innerHeight) && (el.getBoundingClientRect().bottom >= 0);
   }
 
   if(elementInViewport(document.getElementById("projects"))) {
