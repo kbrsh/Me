@@ -371,10 +371,11 @@ footer {
 #footer-logo {
 	height: 100px;
 	width: 100px;
+	border-radius: 10px;
 }
 
 #footer-desc {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 #footer-name, #footer-madeby {
