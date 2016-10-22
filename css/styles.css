@@ -3,6 +3,7 @@
 body {
 	overflow-x: hidden;
 	background: #000;
+	transition: all 0.5s ease;
 }
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
@@ -19,6 +20,10 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
   background: -moz-linear-gradient(bottom right, rgba(61, 230, 177, 0.35), rgba(6, 104, 203, 0.35)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, rgba(61, 230, 177, 0.35), rgba(6, 104, 203, 0.35)); /* Standard syntax */
 	color: #f5f5f5;
+}
+
+.about-color {
+	background: #f5f5f5;
 }
 
 .subhead {

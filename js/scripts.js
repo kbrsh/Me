@@ -51,8 +51,15 @@ document.addEventListener("scroll", function(e) {
       el.style.transform = 'translateY(-' + calc + 'px)'
     }
   }
+  if(document.body.scrollTop > document.getElementById("hero").clientHeight) {
+    document.body.classList.add("about-color");
+  } else if(document.body.scrollTop < document.getElementById("hero").clientHeight) {
+    document.body.classList.remove("about-color");
+  }
 
 });
+
+
 /* smooth scroll */
   (function() {
 
