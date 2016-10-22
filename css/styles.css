@@ -53,7 +53,7 @@ p {
 
 #about {
 	background: transparent;
-	color: #888888;
+	color: #707070;
 	height: 100vh;
 	font-size: 2rem;
 	padding-top: 3rem;
@@ -157,7 +157,7 @@ p {
   position: absolute;
   height: 1px;
   width: 100%;
-	background: #aba;
+	background: #ABABAB;
   -webkit-transition: all .35s ease;
   transition: all .35s ease;
 }
