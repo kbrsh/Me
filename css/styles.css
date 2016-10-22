@@ -61,7 +61,8 @@ p {
 /*Projects*/
 
 #projects {
-	height: auto;
+	margin: 0;
+	padding: 0;
 	background: transparent;
 }
 
@@ -69,6 +70,15 @@ p {
 	height: 100vh;
 	background: transparent;
 	color: #f5f5f5;
+	text-align: left;
+}
+
+.project-head {
+	font-size: 4.5rem;
+}
+.project-desc {
+	font-size: 3rem;
+	margin-left: 0;
 }
 
 .colicious {
