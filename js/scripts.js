@@ -39,23 +39,23 @@ var pick=~~(Math.random()*359),
 
 // Image effects + Color Change
 document.addEventListener("scroll", function(e) {
-  var els = document.getElementsByClassName("lax-img");
-  var scrollTop = document.body.scrollTop;
-  for (var i = 0; i < els.length; i++) {
-    var el = els[i];
-    var elemTop = el.getBoundingClientRect().top;
-    var elemBottom = el.getBoundingClientRect().bottom;
-    var isVisible = (elemTop <= window.innerHeight) && (elemBottom >= 0);
-    if (isVisible) {
-      var calc = (scrollTop + window.innerHeight - el.offsetTop - 100) / 4;
-      el.style.transform = 'translateY(-' + calc + 'px)'
-    }
-  }
+  // var els = document.getElementsByClassName("lax-img");
+  // var scrollTop = document.body.scrollTop;
+  // for (var i = 0; i < els.length; i++) {
+  //   var el = els[i];
+  //   var elemTop = el.getBoundingClientRect().top;
+  //   var elemBottom = el.getBoundingClientRect().bottom;
+  //   var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+  //   if ((scrollTop + window.innerHeight - el.offsetTop - 100) / 4 > 0) {
+  //     var calc = (scrollTop + window.innerHeight - el.offsetTop - 100) / 4;
+  //     el.style.transform = 'translateY(-' + calc + 'px)'
+  //   }
+  // }
 
 
-  if(document.body.scrollTop > document.getElementById("about").clientHeight + 100) {
+  if(document.body.scrollTop > document.getElementById("about").clientHeight + 200) {
     document.body.classList.add("colicious");
-  } else if(document.body.scrollTop < document.getElementById("about").clientHeight + 100) {
+  } else if(document.body.scrollTop < document.getElementById("about").clientHeight + 200) {
     document.body.classList.remove("colicious");
   }
 
