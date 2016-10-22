@@ -327,15 +327,15 @@ p {
 	height: 100px;
 	width: 100px;
 	border-radius: 50%;
-	transition: all .75s ease;
-	animation: loader .75s infinite;
+	transition: all .4s ease;
+	animation: loader .4s infinite;
 }
 
 @keyframes loader {
 	from {
-		transform: rotate(0deg);
+		transform: scale(1);
 	}
 	to {
-		transform: rotate(360deg);
+		transform: scale(1.1);
 	}
 }

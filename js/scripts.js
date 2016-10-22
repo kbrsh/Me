@@ -1,12 +1,9 @@
 /* loader */
 document.body.style.overflowY = "hidden"
+document.getElementById("loader").style.opacity = "0";
+document.body.style.overflowY = "auto"
 setTimeout(function() {
-  document.getElementById("loader").style.opacity = "0";
-  document.body.style.overflowY = "auto"
-  setTimeout(function() {
-    document.getElementById("loader").style.display = "none";
-  }, 750);
-  // document.getElementById("loader").style.display = "none";
+  document.getElementById("loader").style.display = "none";
 }, 750);
 
 
