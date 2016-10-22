@@ -56,6 +56,7 @@ p {
 	color: #888888;
 	height: 100vh;
 	font-size: 2rem;
+	margin: 3rem;
 }
 
 /*Projects*/
@@ -68,7 +69,8 @@ p {
 }
 
 .project {
-	height: 100vh;
+	height: auto;
+	margin: 7rem;
 	background: transparent;
 	color: #f5f5f5;
 	text-align: left;
