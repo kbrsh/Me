@@ -155,7 +155,7 @@ p {
 
 .button_container span {
   position: absolute;
-  height: 1px;
+  height: 2px;
   width: 100%;
 	background: #ABABAB;
   -webkit-transition: all .35s ease;
