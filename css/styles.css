@@ -93,18 +93,6 @@ p {
 	height: 200px;
 }
 
-.visit {
-	margin-left: 0;
-	background: none;
-	border: 2px solid #f5f5f5;
-}
-
-.visit:hover {
-	background: #f5f5f5;
-	color: #111;
-	opacity: 1;
-}
-
 .dark {
 	background: #1B1D1E;
 	color: #f5f5f5;
@@ -124,6 +112,8 @@ p {
   width: 50px;
   border-radius: 50%;
 }
+
+
 /* Nav */
 .button_container {
   position: fixed;
