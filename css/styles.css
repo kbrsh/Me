@@ -88,6 +88,14 @@ p {
 
 .visit {
 	margin-left: 0;
+	background: none;
+	border: 2px solid #f5f5f5;
+}
+
+.visit:hover {
+	background: #f5f5f5;
+	color: #111;
+	opacity: 1;
 }
 
 .colicious {
