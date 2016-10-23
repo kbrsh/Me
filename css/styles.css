@@ -132,6 +132,12 @@ p {
 	margin-right: auto;
 }
 
+.contact-img {
+	background: #f5f5f5;
+	padding: 3rem;
+	border-radius: 50%;
+}
+
 
 /*Make it dark*/
 .dark {

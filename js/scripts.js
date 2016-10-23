@@ -36,8 +36,17 @@ var pick=~~(Math.random()*359),
 
 // Image effects + Color Change
 function elementInViewport(el) {
-    return (el.getBoundingClientRect().top < window.innerHeight) && (el.getBoundingClientRect().bottom >= 0);
+    return (el.getBoundingClientRect().top >= 0) && (el.getBoundingClientRect().bottom >= 0);
 }
+
+function topInViewport(el) {
+  return el.getBoundingClientRect().top < window.innerHeight;
+}
+
+function inView(el) {
+
+}
+
 document.addEventListener("scroll", function(e) {
   // var els = document.getElementsByClassName("lax-img");
   // var scrollTop = document.body.scrollTop;
@@ -53,13 +62,15 @@ document.addEventListener("scroll", function(e) {
   // }
 
 
-  if(elementInViewport(document.getElementById("projects"))) {
+  if(topInViewport(document.getElementById("projects"))) {
     document.body.classList.add("dark");
-  } else if(elementInViewport(document.getElementById("about"))) {
+  } else if(topInViewport(document.getElementById("about"))) {
     document.body.classList.remove("dark");
-  } else if(elementInViewport(document.getElementById("contact"))) {
+  } else if(topInViewport(document.getElementById("contact"))) {
     document.body.classList.remove("dark");
   }
+
+
 
 });
 
