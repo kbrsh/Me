@@ -13,7 +13,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-Bold";
 }
 
 p {
@@ -43,7 +43,7 @@ p {
 }
 
 .head {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-Bold";
 	color: #f5f5f5;
 	font-size: 7rem;
 }
@@ -257,7 +257,7 @@ p {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 4rem;
-  font-family: 'Gilroy-ExtraBold', serif;
+  font-family: 'Gilroy-Bold', serif;
   letter-spacing: 10px;
   text-align: center;
 }
@@ -398,7 +398,7 @@ footer {
 }
 
 #footer-name {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-Bold";
 }
 
 #footer-desc {
