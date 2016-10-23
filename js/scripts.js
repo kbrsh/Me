@@ -35,6 +35,9 @@ var pick=~~(Math.random()*359),
 
 
 // Image effects + Color Change
+function elementInViewport(el) {
+    return (el.getBoundingClientRect().top < window.innerHeight) && (el.getBoundingClientRect().bottom >= 0);
+}
 document.addEventListener("scroll", function(e) {
   // var els = document.getElementsByClassName("lax-img");
   // var scrollTop = document.body.scrollTop;
@@ -49,10 +52,6 @@ document.addEventListener("scroll", function(e) {
   //   }
   // }
 
-
-  function elementInViewport(el) {
-      return (el.getBoundingClientRect().top < window.innerHeight) && (el.getBoundingClientRect().bottom >= 0);
-  }
 
   if(elementInViewport(document.getElementById("projects"))) {
     document.body.classList.add("dark");

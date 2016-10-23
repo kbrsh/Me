@@ -119,7 +119,7 @@ p {
 
 
 #contact {
-	height: 100vh;
+	height: auto;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	text-align: center;
@@ -407,6 +407,6 @@ footer {
 }
 
 #footer-link {
-	color: #f5f5f5;
+	color: #111111;
 	text-decoration: none;
 }
