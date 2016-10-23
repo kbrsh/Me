@@ -133,9 +133,8 @@ p {
 }
 
 .contact-img {
-	background: #f5f5f5;
-	padding: 3rem;
-	border-radius: 50%;
+	height: 100px;
+	width: 100px;
 }
 
 
@@ -413,6 +412,6 @@ footer {
 }
 
 #footer-link {
-	color: #111111;
+	color: #f5f5f5;
 	text-decoration: none;
 }
