@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat";
+
 html, body {
   margin: 0;
   padding: 0;
@@ -15,5 +15,5 @@ body {
 }
 
 h1 {
-  font-family: 'Montserrat' !important;
+  font-family: 'Inconsolata' !important;
 }
