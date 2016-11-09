@@ -26,7 +26,7 @@ p {
 }
 
 #hero {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	background: #18be8a; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #18be8a, #044281); /* For Safari 5.1 to 6.0 */
