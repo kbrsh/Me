@@ -252,13 +252,18 @@ p {
   animation-delay: .50s;
 }
 
+.overlay.open li:nth-of-type(5) {
+  -webkit-animation-delay: .55s;
+  animation-delay: .55s;
+}
+
 .overlay .nav {
   position: relative;
   height: 70%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Gilroy-Bold', sans-serif;
   letter-spacing: 10px;
   text-align: center;
