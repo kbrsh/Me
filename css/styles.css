@@ -226,7 +226,7 @@ p {
 
 .overlay.open {
   height: 100%;
-  opacity: .9;
+  opacity: .99;
   visibility: visible;
 }
 
