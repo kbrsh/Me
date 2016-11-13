@@ -18,7 +18,7 @@ document.querySelector('.burger').addEventListener("click", function() {
 
  for(var i = 0; i < menuLinks.length; i++) {
    menuLinks[i].addEventListener("click", function() {
-     document.querySelector('.button_container').classList.toggle('active');
+     document.querySelector('.burger').classList.toggle('active');
      document.querySelector('.overlay').classList.toggle('open');
    });
  }
