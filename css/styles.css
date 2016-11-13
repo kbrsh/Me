@@ -179,7 +179,7 @@ p {
   position: absolute;
   height: 2px;
   width: 100%;
-	background: #ABABAB;
+	background: #CCCCCC;
   -webkit-transition: all .35s ease;
   transition: all .35s ease;
 }
