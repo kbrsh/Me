@@ -284,6 +284,12 @@ p {
   text-decoration: none;
 }
 
+.overlay ul li a:hover {
+  color: #f5f5f5;
+  text-decoration: none;
+	cursor: pointer;
+}
+
 
 
 @-webkit-keyframes jelly {
