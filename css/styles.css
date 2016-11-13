@@ -231,8 +231,8 @@ p {
 }
 
 .overlay.open li {
-  -webkit-animation: fadeInTop .5s ease forwards;
-  animation: fadeInTop .5s ease forwards;
+  -webkit-animation: jelly .5s ease forwards;
+  animation: jelly .5s ease forwards;
   -webkit-animation-delay: .35s;
   animation-delay: .35s;
 }
