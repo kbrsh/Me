@@ -258,14 +258,13 @@ p {
 }
 
 .overlay .nav {
+	height: 100%;
   position: relative;
-  height: 70%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-size: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  font-size: 2.5rem;
   font-family: 'Gilroy-Bold', sans-serif;
-  letter-spacing: 10px;
   text-align: center;
 }
 
@@ -273,15 +272,12 @@ p {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  display: flex;
-	flex-direction: column;
-	justify-content: space-around;
   position: relative;
-  height: 100%;
 }
 
 .overlay ul li {
   opacity: 0;
+	margin: 2.5rem;
 }
 
 .overlay ul li a {
