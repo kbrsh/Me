@@ -9,8 +9,8 @@ setTimeout(function() {
 
 
 /* Nav */
-document.querySelector('.button_container').addEventListener("click", function() {
-   document.querySelector('.button_container').classList.toggle('active');
+document.querySelector('.burger').addEventListener("click", function() {
+   document.querySelector('.burger').classList.toggle('active');
    document.querySelector('.overlay').classList.toggle('open');
  });
 

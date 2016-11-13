@@ -163,7 +163,7 @@ p {
 
 
 /* Nav */
-.button_container {
+.burger {
   position: fixed;
   width: 30px;
   height: 25px;
@@ -171,12 +171,11 @@ p {
   right: 5%;
   top: 5%;
   cursor: pointer;
-
   -webkit-transition: opacity .25s;
   transition: opacity .25s;
 }
 
-.button_container span {
+.burger span {
   position: absolute;
   height: 2px;
   width: 100%;
@@ -193,17 +192,17 @@ p {
   top: 20px;
 }
 
-.button_container.active .top {
+.burger.active .top {
   -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
   transform: translateY(10px) translateX(0) rotate(45deg);
   background: white;
 }
 
-.button_container.active .middle {
+.burger.active .middle {
   opacity: 0;
 }
 
-.button_container.active .bottom {
+.burger.active .bottom {
   -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
   transform: translateY(-10px) translateX(0) rotate(-45deg);
   background: white;
