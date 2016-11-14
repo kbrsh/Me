@@ -81,7 +81,8 @@ p {
 
 .project {
 	height: auto;
-	margin: 7rem;
+	margin-top: 7rem;
+	margin-bottom: 7rem;
 	background: transparent;
 	color: #f5f5f5;
 	text-align: left;
