@@ -424,6 +424,16 @@ p {
 	}
 }
 
+@media screen and (max-width: 400px){
+	.head {
+		font-size: 5rem;
+	}
+
+	.subhead {
+		font-size: 3rem;
+	}
+}
+
 
 /* === Footer === */
 footer {
