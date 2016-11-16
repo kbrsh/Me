@@ -47,32 +47,32 @@ function inView(el) {
 
 }
 
-document.addEventListener("scroll", function(e) {
-  // var els = document.getElementsByClassName("lax-img");
-  // var scrollTop = document.body.scrollTop;
-  // for (var i = 0; i < els.length; i++) {
-  //   var el = els[i];
-  //   var elemTop = el.getBoundingClientRect().top;
-  //   var elemBottom = el.getBoundingClientRect().bottom;
-  //   var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-  //   if ((scrollTop + window.innerHeight - el.offsetTop - 100) / 4 > 0) {
-  //     var calc = (scrollTop + window.innerHeight - el.offsetTop - 100) / 4;
-  //     el.style.transform = 'translateY(-' + calc + 'px)'
-  //   }
-  // }
-
-
-  if(topInViewport(document.getElementById("projects"))) {
-    document.body.classList.add("dark");
-  } else if(topInViewport(document.getElementById("about"))) {
-    document.body.classList.remove("dark");
-  } else if(topInViewport(document.getElementById("contact"))) {
-    document.body.classList.remove("dark");
-  }
-
-
-
-});
+// document.addEventListener("scroll", function(e) {
+//   // var els = document.getElementsByClassName("lax-img");
+//   // var scrollTop = document.body.scrollTop;
+//   // for (var i = 0; i < els.length; i++) {
+//   //   var el = els[i];
+//   //   var elemTop = el.getBoundingClientRect().top;
+//   //   var elemBottom = el.getBoundingClientRect().bottom;
+//   //   var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+//   //   if ((scrollTop + window.innerHeight - el.offsetTop - 100) / 4 > 0) {
+//   //     var calc = (scrollTop + window.innerHeight - el.offsetTop - 100) / 4;
+//   //     el.style.transform = 'translateY(-' + calc + 'px)'
+//   //   }
+//   // }
+//
+//
+//   if(topInViewport(document.getElementById("projects"))) {
+//     document.body.classList.add("dark");
+//   } else if(topInViewport(document.getElementById("about"))) {
+//     document.body.classList.remove("dark");
+//   } else if(topInViewport(document.getElementById("contact"))) {
+//     document.body.classList.remove("dark");
+//   }
+//
+//
+//
+// });
 
 
 /* smooth scroll */
