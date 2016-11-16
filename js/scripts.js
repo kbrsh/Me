@@ -34,18 +34,18 @@ var pick=~~(Math.random()*359),
   document.body.appendChild(tag);
 
 
-// Image effects + Color Change
-function elementInViewport(el) {
-    return (el.getBoundingClientRect().top >= 0) && (el.getBoundingClientRect().bottom >= 0);
-}
-
-function topInViewport(el) {
-  return el.getBoundingClientRect().top < window.innerHeight;
-}
-
-function inView(el) {
-
-}
+// // Image effects + Color Change
+// function elementInViewport(el) {
+//     return (el.getBoundingClientRect().top >= 0) && (el.getBoundingClientRect().bottom >= 0);
+// }
+//
+// function topInViewport(el) {
+//   return el.getBoundingClientRect().top < window.innerHeight;
+// }
+//
+// function inView(el) {
+//
+// }
 
 // document.addEventListener("scroll", function(e) {
 //   // var els = document.getElementsByClassName("lax-img");
