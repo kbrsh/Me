@@ -71,6 +71,8 @@ p {
 	background: #1B1D1E;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+	display: flex;
+	align-items: center;
 }
 
 .projects-container {
