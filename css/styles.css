@@ -423,6 +423,15 @@ p {
 	.subhead {
 		font-size: 3rem;
 	}
+
+	.social {
+		width: 200px;
+	}
+	
+	.social-img {
+		height: 35px;
+		width: 35px;
+	}
 }
 
 
