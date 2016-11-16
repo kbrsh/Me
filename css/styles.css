@@ -63,6 +63,15 @@ p {
 	padding-bottom: 3rem;
 }
 
+.social {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10rem;
+	display: flex;
+	justify-content: space-between;
+}
+
 /*Projects*/
 
 #projects {
