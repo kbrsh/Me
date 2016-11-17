@@ -115,22 +115,27 @@ p {
 
 .colicious .project-title:hover {
 	color: #E43956;
+	border-bottom: 1.5px solid #E43956;
 }
 
 .snip .project-title:hover {
 	color: #1098F7;
+	border-bottom: 1.5px solid #1098F7;
 }
 
 .ice .project-title:hover {
 	color: #50FFDF;
+	border-bottom: 1.5px solid #50FFDF;
 }
 
 .lock .project-title:hover {
 	color: #00D9C0;
+	border-bottom: 1.5px solid #00D9C0;
 }
 
 .wing .project-title:hover {
 	color: #3A44B9;
+	border-bottom: 1.5px solid #3A44B9;
 }
 
 
