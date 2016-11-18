@@ -21,6 +21,12 @@ p {
 	margin: 1.5rem;
 }
 
+::selection {
+	color: #f5f5f5;
+	background-color: #38d0c4;
+	text-shadow:rgba(0,0,0,.1) 1px 2px 2px;
+}
+
 .small-container {
 	max-width: 600px;
 }
