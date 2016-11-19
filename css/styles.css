@@ -119,6 +119,11 @@ p {
 	height: 200px;
 }
 
+.break-design .project-title:hover {
+	color: #FC5D7C;
+	border-bottom: 2px solid #FC5D7C;
+}
+
 .colicious .project-title:hover {
 	color: #E43956;
 	border-bottom: 2px solid #E43956;
