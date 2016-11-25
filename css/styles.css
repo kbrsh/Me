@@ -119,6 +119,11 @@ p {
 	height: 200px;
 }
 
+.alter .project-title:hover {
+	color: #FC5D7C;
+	border-bottom: 2px solid #FC5D7C;
+}
+
 .break-design .project-title:hover {
 	color: #FC5D7C;
 	border-bottom: 2px solid #FC5D7C;
