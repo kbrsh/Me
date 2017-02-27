@@ -1,10 +1,21 @@
+// Hero
+var hero = document.getElementById("hero");
+var hue1 = Math.floor(Math.random()*360);
+var hue2 = hue1 + 260 % 360;
+var hslFromHue = function(hue) {
+  return `hsl(${hue}, 100%, 35%)`;
+}
+hero.style.background = `linear-gradient(to bottom right, ${hslFromHue(hue1)}, ${hslFromHue(hue2)})`;
+console.log(hue1, hue2)
+
+
 /* Nav */
 var burger = document.querySelector('.burger');
 var overlay = document.querySelector('.overlay')
 burger.addEventListener("click", function() {
   burger.classList.toggle('active');
   overlay.classList.toggle('open');
- });
+});
 
  var menuLinks = document.querySelectorAll(".menuLink");
 
