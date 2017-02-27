@@ -134,6 +134,11 @@ p {
 	border-bottom: 2px solid #E43956;
 }
 
+.moon .project-title:hover {
+	color: #820ad5;
+	border-bottom: 2px solid #820ad5;
+}
+
 .snip .project-title:hover {
 	color: #1098F7;
 	border-bottom: 2px solid #1098F7;
