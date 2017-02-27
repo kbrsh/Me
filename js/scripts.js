@@ -1,12 +1,13 @@
 // Hero
 var hero = document.getElementById("hero");
-var hue1 = Math.floor(Math.random()*360);
-var hue2 = hue1 + 260 % 360;
 var hslFromHue = function(hue) {
   return `hsl(${hue}, 100%, 35%)`;
 }
-hero.style.background = `linear-gradient(to bottom right, ${hslFromHue(hue1)}, ${hslFromHue(hue2)})`;
-console.log(hue1, hue2)
+hero.addEventListener('click', function() {
+  var hue1 = Math.floor(Math.random()*360);
+  var hue2 = hue1 + 260 % 360;
+  hero.style.background = `linear-gradient(to bottom right, ${hslFromHue(hue1)}, ${hslFromHue(hue2)})`;
+});
 
 
 /* Nav */
