@@ -388,6 +388,10 @@ p {
 		height: 35px;
 		width: 35px;
 	}
+
+	.overlay ul li {
+		font-size: 3rem;
+	}
 }
 
 
