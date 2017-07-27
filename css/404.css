@@ -1,21 +1,17 @@
-
 html, body {
   margin: 0;
   padding: 0;
 }
+
 body {
-  background: #111;
+  background: #1B1D1E;
   color: #f5f5f5;
   overflow: hidden;
   height: 100vh;
 }
 
 h1 {
-  font-family: 'Inconsolata';
-  font-size: 15rem;
+  font-family: "Inconsolata", monospace;
+  font-size: 200px;
   margin: 0;
-}
-
-p {
-  font-size: 4rem;
 }
