@@ -12,13 +12,7 @@
 
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Hans Kendrick';
   font-style: normal;
-  src: local('Lato-Thin'), url(./Lato-Thin.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'LatoLight';
-  font-style: normal;
-  src: local('Lato-Light'), url(./Lato-Light.ttf) format('truetype');
+  src: local('Hans Kendrick 3'), url(./Hans-Kendrick-Regular.otf) format('opentype');
 }
