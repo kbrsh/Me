@@ -261,6 +261,7 @@ p {
 	animation-name: fadeIn;
 	animation-duration: 1s;
 	animation-timing-function: ease;
+	animation-delay: 0.5s;
 	animation-fill-mode: forwards;
 }
 
@@ -269,7 +270,7 @@ p {
 	animation-name: fadeIn;
 	animation-duration: 1s;
 	animation-timing-function: ease;
-	animation-delay: 0.7s;
+	animation-delay: 1.2s;
 	animation-fill-mode: forwards;
 }
 
