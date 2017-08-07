@@ -4,10 +4,12 @@ html, body {
 }
 
 body {
-  background: #1B1D1E;
   color: #f5f5f5;
-  overflow: hidden;
-  height: 100vh;
+	background: #001724;
+  background: -webkit-linear-gradient(0deg, #00301E, #001724);
+  background: -o-linear-gradient(0deg, #00301E, #001724);
+  background: -moz-linear-gradient(0deg, #00301E, #001724);
+  background: linear-gradient(0deg, #00261B, #001724);
 }
 
 h1 {
