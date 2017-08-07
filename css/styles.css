@@ -271,12 +271,16 @@ body {
 		font-size: 4.5rem;
 	}
 
+	#about .container.small p, .project {
+		font-size: 35px;
+	}
+
 	.overlay ul li {
 		font-size: 7rem;
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	.head {
 		font-size: 5rem;
 	}
@@ -285,13 +289,8 @@ body {
 		font-size: 3rem;
 	}
 
-	.social {
-		width: 200px;
-	}
-
-	.social-img {
-		height: 35px;
-		width: 35px;
+	#about .container.small p, .project {
+		font-size: 30px;
 	}
 
 	.overlay ul li {
