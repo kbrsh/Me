@@ -1,10 +1,14 @@
 // Navigation
-var burger = document.getElementsByClassName('burger')[0];
-var overlay = document.getElementsByClassName('overlay')[0];
+var navigation = document.getElementsByClassName("navigation")[0];
+var burger = document.getElementsByClassName("burger")[0];
+var overlay = document.getElementsByClassName("overlay")[0];
 
 var toggleMenu = function(e) {
-  burger.classList.toggle('active');
-  overlay.classList.toggle('open');
+  if(navigation.getAttribute("class") === "navigation fadeInSlow") {
+    navigation.classList.remove("fadeInSlow");
+  }
+  burger.classList.toggle("active");
+  overlay.classList.toggle("open");
 }
 
 burger.addEventListener("click", toggleMenu);

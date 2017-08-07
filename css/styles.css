@@ -37,14 +37,14 @@ p {
 .subhead {
 	margin-top: 0;
 	font-family: "Gilroy-Light", sans-serif;
-	font-size: 4.7rem;
+	font-size: 7rem;
 	color: #f5f5f5;
 }
 
 .head {
 	margin-bottom: 1rem;
 	font-family: "Gilroy-Bold", sans-serif;
-	font-size: 7rem;
+	font-size: 10rem;
 	color: #f5f5f5;
 }
 
@@ -132,9 +132,8 @@ p {
 #logo img {
   height: 50px;
   width: 50px;
-  border-radius: 10px;
+  border-radius: 7px;
 }
-
 
 /* Navigation */
 .burger {
@@ -143,7 +142,7 @@ p {
   height: 25px;
   right: 5%;
   top: 5%;
-	z-index: 100;
+	z-index: 2;
   cursor: pointer;
   transition: opacity .35s;
 }
@@ -162,6 +161,10 @@ p {
 
 .bottom {
   top: 20px;
+}
+
+.burger.active {
+	opacity: 1;
 }
 
 .burger.active .top {
@@ -189,8 +192,8 @@ p {
   top: 0;
   opacity: 0;
   overflow: hidden;
+	z-index: 1;
   transition: opacity .35s, visibility .35s;
-  z-index: 1;
 }
 
 .overlay .nav {
@@ -232,7 +235,7 @@ p {
   visibility: visible;
 }
 
-@keyframes fadein {
+@keyframes fadeIn {
   from {
 		opacity: 0;
 	}
@@ -242,7 +245,34 @@ p {
 }
 
 .fadeIn {
-	animation: fadein 0.7s ease;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+.fadeInSlow {
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-delay: 0.7s;
+	animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+	.head {
+		font-size: 6.5rem;
+	}
+
+	.subhead {
+		font-size: 4.5rem;
+	}
+
+	.overlay ul li {
+		font-size: 7rem;
+	}
 }
 
 @media screen and (max-width: 400px) {
