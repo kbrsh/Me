@@ -119,6 +119,11 @@ p {
 	border-bottom: 2px solid #820ad5;
 }
 
+.slash .project-title:hover {
+	color: #d5470a;
+	border-bottom: 2px solid #d5470a;
+}
+
 .wade .project-title:hover {
 	color: #50FFDF;
 	border-bottom: 2px solid #50FFDF;
