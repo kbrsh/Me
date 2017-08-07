@@ -50,16 +50,23 @@ p {
 
 /* About */
 #about {
+	display: flex;
+	align-items: center;
 	min-height: 100vh;
-	font-size: 2.1rem;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	background: #f5f5f5;
-	color: #666666;
 }
 
 .about-container {
 	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-container p {
+	font-size: 2.1rem;
+	color: #666666;
 }
 
 .social {
@@ -73,13 +80,13 @@ p {
 
 /* Projects */
 #projects {
-	color: #f5f5f5;
-	min-height: 100vh;
-	background: #1B1D1E;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
 	display: flex;
 	align-items: center;
+	min-height: 100vh;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	color: #f5f5f5;
+	background: #1B1D1E;
 }
 
 .projects-container {
