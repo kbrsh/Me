@@ -122,6 +122,32 @@ body {
 	border-bottom: 2px solid #3A44B9;
 }
 
+/* Social */
+#social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+#social .container.small p {
+	font-size: 45px;
+	font-family: "Hans Kendrick", sans-serif;
+}
+
+#social .container.small a {
+	color: #f5f5f5;
+	border-bottom: 2px solid #f5f5f5;
+	text-decoration: none;
+	transition: color .2s ease, border .2s ease;
+}
+
+#social .container.small a:hover {
+	color: #666666;
+	border-bottom: 2px solid #666666;
+}
+
 /* Logo */
 #logo {
 	position: fixed;
@@ -271,7 +297,7 @@ body {
 		font-size: 4.5rem;
 	}
 
-	#about .container.small p, .project {
+	#about .container.small p, .project, #social .container.small p {
 		font-size: 35px;
 	}
 
@@ -289,7 +315,7 @@ body {
 		font-size: 3rem;
 	}
 
-	#about .container.small p, .project {
+	#about .container.small p, .project, #social .container.small p {
 		font-size: 30px;
 	}
 
