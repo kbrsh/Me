@@ -47,6 +47,7 @@ body {
 	min-height: 100vh;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+	opacity: 0;
 }
 
 #about .container.small:hover p {
@@ -80,6 +81,7 @@ body {
 	min-height: 100vh;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+	opacity: 0;
 }
 
 .project {
@@ -129,6 +131,7 @@ body {
 	justify-content: center;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
+	opacity: 0;
 }
 
 #social .container.small p {
