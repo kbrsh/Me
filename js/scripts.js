@@ -51,6 +51,7 @@ var animateOnScroll = function() {
 }
 
 window.addEventListener("scroll", animateOnScroll);
+animateOnScroll();
 
 // Smooth scrolling
 var scroll = function(el) {
