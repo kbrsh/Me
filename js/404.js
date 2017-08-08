@@ -5,9 +5,9 @@
  * Released under the MIT License
  */
 
-const max = 0xFFFFFFFF;
+var max = 0xFFFFFFFF;
 
-const baseToInt = {
+var baseToInt = {
   '0': 0,
   '1': 1,
   '2': 2,
@@ -46,7 +46,7 @@ const baseToInt = {
   '35': 35
 }
 
-const intToBase = {
+var intToBase = {
   '0': 0,
   '1': 1,
   '2': 2,
@@ -85,14 +85,14 @@ const intToBase = {
   '35': 'Z'
 }
 
-const pad = (str) => {
-	const length = str.length;
+var pad = function (str) {
+	var length = str.length;
   if(str.length === 32) {
   	return str;
   } else {
-  	const diff = 32 - length;
-  	let padded = "";
-    for(let i = 0; i < diff; i++) {
+  	var diff = 32 - length;
+  	var padded = "";
+    for(var i = 0; i < diff; i++) {
     	padded += "0";
     }
     padded += str;
@@ -100,18 +100,18 @@ const pad = (str) => {
   }
 }
 
-const padRight = (str, amount) => {
-	for(let i = 0; i < amount; i++) {
+var padRight = function (str, amount) {
+	for(var i = 0; i < amount; i++) {
 		str += "0";
 	}
 
 	return str;
 }
 
-const wrap = (str) => {
-	let result = 0;
+var wrap = function (str) {
+	var result = 0;
 
-	for(let i = 0; i < str.length; i++) {
+	for(var i = 0; i < str.length; i++) {
 		result = ((result * 2) + (baseToInt[str[i]])) % max;
 	}
 
@@ -137,8 +137,8 @@ Long.prototype.xor = function(value) {
 
 Long.prototype.shiftLeft = function(value) {
 	if(value < 32) {
-		let shiftedHigh = (this.high << value) >>> 0;
-		let shiftedLow = (this.low << value) >>> 0;
+		var shiftedHigh = (this.high << value) >>> 0;
+		var shiftedLow = (this.low << value) >>> 0;
 
 		if(shiftedHigh < 0) {
 			shiftedHigh = wrap(padRight(this.high.toString(2), value));
@@ -150,14 +150,14 @@ Long.prototype.shiftLeft = function(value) {
 
     return new Long((shiftedHigh) | (this.low >>> (32 - value)), shiftedLow);
   } else {
-		let shiftBy = value - 32;
-		let shiftedLow = (this.low << shiftBy) >>> 0;
+		var shiftBy = value - 32;
+		var shiftedLow$1 = (this.low << shiftBy) >>> 0;
 
-		if(shiftedLow < 0) {
-			shiftedLow = wrap(padRight(this.low.toString(2), shiftBy));
+		if(shiftedLow$1 < 0) {
+			shiftedLow$1 = wrap(padRight(this.low.toString(2), shiftBy));
 		}
 
-    return new Long(shiftedLow, 0);
+    return new Long(shiftedLow$1, 0);
   }
 }
 
@@ -166,14 +166,14 @@ Long.prototype.toString = function(radix) {
   	radix = 10;
   }
 
-  let binary = pad(this.high.toString(2)) + pad(this.low.toString(2));
-  let result = "";
-  let i = 0;
-  let bit = 0;
-  let end = [];
-  let calc = 0;
-  let quotient = 0;
-  let remainder = 0;
+  var binary = pad(this.high.toString(2)) + pad(this.low.toString(2));
+  var result = "";
+  var i = 0;
+  var bit = 0;
+  var end = [];
+  var calc = 0;
+  var quotient = 0;
+  var remainder = 0;
 
   while(binary.length !== 0) {
   	remainder = 0;
@@ -194,10 +194,10 @@ Long.prototype.toString = function(radix) {
   return result;
 }
 
-const slash = (key) => {
-  let result = new Long(0, 1);
-  let i = 0;
-  let bytes = [];
+var slash = function (key) {
+  var result = new Long(0, 1);
+  var i = 0;
+  var bytes = [];
 
   for(; i < key.length; i++) {
     bytes[i] = key.charCodeAt(i);
@@ -210,19 +210,19 @@ const slash = (key) => {
   return result.toString(36).toLowerCase();
 }
 
-let seed = "404" + (new Date().toString(36));
-const random = () => {
-  const result = slash(seed);
+var seed = "404" + (new Date().toString(36));
+var random = function () {
+  var result = slash(seed);
   seed = result;
   return result.substring(0, 3);
 }
 
-const randomTime = () => {
+var randomTime = function () {
   return (Math.random() * 5000) | 0;
 }
 
-const header = document.getElementById("header");
-const glitch = () => {
+var header = document.getElementById("header");
+var glitch = function () {
   header.textContent = random();
   setTimeout(function() {
     header.textContent = "404";
