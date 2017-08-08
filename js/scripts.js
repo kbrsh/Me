@@ -1,7 +1,7 @@
 // Animate
 var isVisible = function(el) {
   var rect = el.getBoundingClientRect();
-  return (rect.bottom >= 0 && rect.right >= 0 && rect.top <= window.innerHeight && rect.left <= window.innerWidth);
+  return (rect.bottom >= 300 && rect.top <= (window.innerHeight - 300));
 }
 
 var about = document.getElementById("about");
