@@ -203,10 +203,6 @@ body {
 	#about .container.small p, .project, #social .container.small p {
 		font-size: 35px;
 	}
-
-	.overlay ul li {
-		font-size: 7rem;
-	}
 }
 
 @media screen and (max-width: 500px) {
@@ -220,10 +216,6 @@ body {
 
 	#about .container.small p, .project, #social .container.small p {
 		font-size: 30px;
-	}
-
-	.overlay ul li {
-		font-size: 7rem;
 	}
 }
 
