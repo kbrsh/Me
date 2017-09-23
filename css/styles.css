@@ -15,9 +15,8 @@ body {
 }
 
 ::selection {
-	color: #f5f5f5;
-	background-color: #38d0c4;
-	text-shadow: rgba(0,0,0,.1) 1px 2px 2px;
+	color: #111111;
+	background-color: #f5f5f5;
 }
 
 #hero {
@@ -50,7 +49,7 @@ body {
 }
 
 #about .container.small:hover p {
-	color: #666666;
+	color: #777777;
 }
 
 #about .container.small:hover p span.keyword {
@@ -67,10 +66,6 @@ body {
 
 .keyword {
 	transition: color .5s ease;
-}
-
-.keyword:hover {
-	color: #f5f5f5;
 }
 
 /* Projects */
@@ -139,7 +134,7 @@ body {
 
 #social .container.small p {
 	margin-bottom: 4rem;
-	font-size: 45px;
+	font-size: 40px;
 	font-family: "Hans Kendrick", sans-serif;
 }
 
@@ -204,7 +199,7 @@ body {
 		font-size: 4.5rem;
 	}
 
-	#about .container.small p, .project, #social .container.small p {
+	#about .container.small p, .project, #projects .container.small .project-title, #projects .container.small p, #social .container.small p {
 		font-size: 35px;
 	}
 }
@@ -218,7 +213,7 @@ body {
 		font-size: 3rem;
 	}
 
-	#about .container.small p, .project, #social .container.small p {
+	#about .container.small p, .project, #projects .container.small .project-title, #projects .container.small p, #social .container.small p {
 		font-size: 30px;
 	}
 }
