@@ -207,7 +207,7 @@ body {
 		font-size: 4.5rem;
 	}
 
-	#about .container.small p, .project, #projects .container.small .project-title, #projects .container.small p, #social .container.small p {
+	#about .container p, .project, #projects .container .project-title, #projects .container p, #social .container p {
 		font-size: 35px;
 	}
 }
@@ -221,7 +221,7 @@ body {
 		font-size: 3rem;
 	}
 
-	#about .container.small p, .project, #projects .container.small .project-title, #projects .container.small p, #social .container.small p {
+	#about .container p, .project, #projects .container .project-title, #projects .container p, #social .container p {
 		font-size: 30px;
 	}
 }
