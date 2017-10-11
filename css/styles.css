@@ -4,10 +4,11 @@ body {
 	height: 100%;
 	color: #f5f5f5;
 	background: #001724;
-	background: -webkit-linear-gradient(0deg, #00301E, #001724);
-	background: -o-linear-gradient(0deg, #00301E, #001724);
-	background: -moz-linear-gradient(0deg, #00301E, #001724);
-	background: linear-gradient(0deg, #00261B, #001724);
+	background-image: -webkit-linear-gradient(45deg, #00301E, #001724);
+	background-image: -o-linear-gradient(45deg, #00301E, #001724);
+	background-image: -moz-linear-gradient(45deg, #00301E, #001724);
+	background-image: linear-gradient(45deg, #00572e, #003757);
+	background-attachment: fixed;
 }
 
 .container {
@@ -43,13 +44,11 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
 	opacity: 0;
 }
 
 #about .container:hover p {
-	color: #777777;
+	color: rgba(245, 245, 245, 0.3);
 }
 
 #about .container:hover p span.keyword {
@@ -77,8 +76,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
 	opacity: 0;
 }
 
@@ -132,8 +129,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
 	opacity: 0;
 }
 
@@ -161,14 +156,8 @@ body {
 /* Logo */
 #logo {
 	position: absolute;
-	left: 5%;
-	top: 5%;
-}
-
-#logo img {
-  height: 50px;
-  width: 50px;
-  border-radius: 7px;
+	left: 7%;
+	top: 7%;
 }
 
 @keyframes fadeIn {
@@ -186,15 +175,6 @@ body {
 	animation-duration: 1s;
 	animation-timing-function: ease;
 	animation-delay: 0.1s;
-	animation-fill-mode: forwards;
-}
-
-.fadeInSlow {
-	opacity: 0;
-	animation-name: fadeIn;
-	animation-duration: 1s;
-	animation-timing-function: ease;
-	animation-delay: 0.7s;
 	animation-fill-mode: forwards;
 }
 
@@ -224,43 +204,4 @@ body {
 	#about .container p, .project, #projects .container .project-title, #projects .container p, #social .container p {
 		font-size: 30px;
 	}
-}
-
-
-/* === Footer === */
-footer {
-	margin: 5rem;
-}
-
-#footer-content {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-
-#footer-name, #footer-madeby {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 2.5rem;
-}
-
-#footer-name {
-	font-family: "Gilroy-Bold", sans-serif;
-}
-
-#footer-desc {
-	margin-left: 1rem;
-	font-family: "Gilroy-Light", sans-serif;
-}
-
-#footer-logo {
-	height: 75px;
-	width: 75px;
-	border-radius: 10px;
-	margin-bottom: 0;
-}
-
-#footer-link {
-	color: #f5f5f5;
-	text-decoration: none;
 }
