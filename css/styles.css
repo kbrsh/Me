@@ -104,8 +104,8 @@ body {
 }
 
 .moon .project-title:hover {
-	color: #820ad5;
-	border-bottom: 2px solid #820ad5;
+	color: #615cfa;
+	border-bottom: 2px solid #615cfa;
 }
 
 .slash .project-title:hover {
@@ -114,13 +114,13 @@ body {
 }
 
 .wade .project-title:hover {
-	color: #50FFDF;
-	border-bottom: 2px solid #50FFDF;
+	color: #50ffbb;
+	border-bottom: 2px solid #50ffbb;
 }
 
 .wing .project-title:hover {
-	color: #3A44B9;
-	border-bottom: 2px solid #3A44B9;
+	color: #239FB0;
+	border-bottom: 2px solid #239FB0;
 }
 
 /* Social */
@@ -149,8 +149,8 @@ body {
 }
 
 #social .container a:hover {
-	color: #666666;
-	border-bottom: 2px solid #666666;
+	color: #AAAAAA;
+	border-bottom: 2px solid #AAAAAA;
 }
 
 /* Logo */
