@@ -179,6 +179,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+	#logo img {
+		height: 40px;
+		width: auto;
+	}
+
 	.head {
 		font-size: 6.5rem;
 	}
@@ -188,7 +193,7 @@ body {
 	}
 
 	#about .container p, .project, #projects .container .project-title, #projects .container p, #social .container p {
-		font-size: 35px;
+		font-size: 3.5rem;
 	}
 }
 
@@ -202,6 +207,6 @@ body {
 	}
 
 	#about .container p, .project, #projects .container .project-title, #projects .container p, #social .container p {
-		font-size: 30px;
+		font-size: 3rem;
 	}
 }
