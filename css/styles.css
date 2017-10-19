@@ -1,7 +1,4 @@
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
 	color: #f5f5f5;
 	background: #004466;
 	background-image: -webkit-linear-gradient(90deg, #00663c, #004466);
@@ -19,29 +16,19 @@ body {
 	max-width: 700px;
 }
 
-#hero {
-	display: flex;
-	min-height: 100vh;
-	text-align: center;
-}
-
 .subhead {
 	margin-bottom: 0;
 	font-family: "Gilroy-Light", sans-serif;
-	font-size: 7rem;
+	font-size: 70px;
 }
 
 .head {
 	font-family: "Gilroy-Bold", sans-serif;
-	font-size: 10rem;
+	font-size: 100px;
 }
 
 /* About */
 #about {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
 	opacity: 0;
 }
 
@@ -56,12 +43,12 @@ body {
 #about .container p {
 	color: #f5f5f5;
 	font-family: "Hans Kendrick", sans-serif;
-	font-size: 4rem;
+	font-size: 40px;
 	transition: color .5s ease;
 }
 
 #about .container p:first-of-type {
-	margin-bottom: 4rem;
+	margin-bottom: 40px;
 }
 
 .keyword {
@@ -70,30 +57,26 @@ body {
 
 /* Projects */
 #projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
 	opacity: 0;
 }
 
 .project {
-	margin-top: 7rem;
-	margin-bottom: 7rem;
+	margin-top: 70px;
+	margin-bottom: 70px;
 	color: #f5f5f5;
-	font-family: "Hans Kendrick", sans-serif;
 }
 
 .project-title {
 	color: #f5f5f5;
-	font-size: 4rem;
+	font-size: 40px;
 	border-bottom: 2px solid #f5f5f5;
 	text-decoration: none;
 	transition: color .2s ease, border .2s ease;
 }
 
 .project p {
-	font-size: 4rem;
+	font-size: 40px;
+	font-family: "Hans Kendrick", sans-serif;
 }
 
 .colicious .project-title:hover {
@@ -123,30 +106,26 @@ body {
 
 /* Social */
 #social {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
 	opacity: 0;
 }
 
 #social .container p {
-	font-size: 4rem;
+	font-size: 40px;
 	font-family: "Hans Kendrick", sans-serif;
 }
 
 #social .container p:first-of-type {
-	margin-bottom: 4rem;
+	margin-bottom: 40px;
 }
 
-#social .container a {
+#social .container p a {
 	color: #f5f5f5;
 	border-bottom: 2px solid #f5f5f5;
 	text-decoration: none;
 	transition: color .2s ease, border .2s ease;
 }
 
-#social .container a:hover {
+#social .container p a:hover {
 	color: #AAAAAA;
 	border-bottom: 2px solid #AAAAAA;
 }
@@ -183,28 +162,28 @@ body {
 	}
 
 	.head {
-		font-size: 6.5rem;
+		font-size: 65px;
 	}
 
 	.subhead {
-		font-size: 4.5rem;
+		font-size: 45px;
 	}
 
-	#about .container p, .project, #projects .container .project-title, #projects .container p, #social .container p {
-		font-size: 3.5rem;
+	#about .container p, #projects .project p, #social .container p {
+		font-size: 35px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.head {
-		font-size: 5rem;
+		font-size: 50px;
 	}
 
 	.subhead {
-		font-size: 3rem;
+		font-size: 30px;
 	}
 
-	#about .container p, .project, #projects .container .project-title, #projects .container p, #social .container p {
-		font-size: 3rem;
+	#about .container p, #projects .project p, #social .container p {
+		font-size: 30px;
 	}
 }
