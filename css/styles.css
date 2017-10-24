@@ -7,11 +7,6 @@ body {
 	background-image: linear-gradient(90deg, #00663c, #004466);
 }
 
-::selection {
-	color: #111111;
-	background-color: #f5f5f5;
-}
-
 .container {
 	max-width: 700px;
 }
@@ -130,20 +125,15 @@ body {
 	border-bottom: 2px solid #AAAAAA;
 }
 
-/* Logo */
 #logo {
 	position: absolute;
 	left: 7%;
 	top: 7%;
 }
 
-@keyframes fadeIn {
-  from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+::selection {
+	color: #111111;
+	background-color: #f5f5f5;
 }
 
 .fadeIn {
@@ -153,6 +143,15 @@ body {
 	animation-timing-function: ease;
 	animation-delay: 0.1s;
 	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @media screen and (max-width: 768px) {
