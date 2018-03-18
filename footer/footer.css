@@ -9,6 +9,8 @@ footer {
 }
 
 #footer-made, #footer-name, #footer-logo {
+  margin-top: 0;
+  margin-bottom: 0;
   vertical-align: middle;
 }
 
