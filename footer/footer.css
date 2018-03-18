@@ -1,37 +1,25 @@
 /* === Footer === */
 footer {
-	margin: 5rem;
+  margin: 50px;
 }
 
 #footer-link {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-  color: #111111;
   text-decoration: none;
+  color: #111111;
 }
 
-#footer-logo {
-  margin-bottom: 0;
-	height: 75px;
-	width: 75px;
-	border-radius: 10px;
-}
-
-#footer-desc {
-	margin-left: 10px;
-}
-
-#footer-name, #footer-madeby {
-	font-size: 25px;
-}
-
-#footer-madeby {
-	margin: 0;
-  font-weight: 300;
+#footer-made, #footer-name, #footer-logo {
+  vertical-align: middle;
 }
 
 #footer-name {
-	margin: 0;
-	font-weight: 700;
+  font-weight: 700;
+}
+
+#footer-logo {
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
