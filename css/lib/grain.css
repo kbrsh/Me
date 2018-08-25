@@ -10,10 +10,27 @@ html {
 }
 
 body {
-	max-width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
+	max-width: 283px;
+	margin: 17px auto;
 	padding: 0;
+}
+
+@media (min-width: 500px) {
+	body {
+		max-width: 480.551px;
+	}
+}
+
+@media (min-width: 700px) {
+	body {
+		max-width: 677.74954px;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+		max-width: 972.772579px;
+	}
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, code, pre code, img, video, input, textarea, button {
@@ -26,58 +43,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 39.322px;
+	font-size: 43.60779px;
 }
 
 h2 {
-	font-size: 34.193px;
+	font-size: 37.27162px;
 }
 
 h3 {
-	font-size: 29.73310625px;
+	font-size: 31.85608257px;
 }
 
 h4 {
-	font-size: 25.854875px;
+	font-size: 23.2713px;
 }
 
 h5 {
-	font-size: 22.4825px;
+	font-size: 23.2713px;
 }
 
 h6 {
-	font-size: 19.55px;
+	font-size: 19.89px;
 }
 
 p {
 	font-size: 17px;
 	line-height: 1.5;
-}
-
-@media (max-width: 753px) {
-	h1 {
-		font-size: 35.393px;
-	}
-
-	h2 {
-		font-size: 31.321px;
-	}
-
-	h3 {
-		font-size: 27.71805137px;
-	}
-
-	h4 {
-		font-size: 24.529249px;
-	}
-
-	h5 {
-		font-size: 21.7073;
-	}
-
-	h6 {
-		font-size: 19.21px;
-	}
 }
 
 a {
