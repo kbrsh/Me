@@ -8,6 +8,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	font-family: "Hans Kendrick", sans-serif;
+	background: none;
 	color: #CCCCCC;
 }
 
@@ -16,11 +17,6 @@ section {
 	min-height: 100vh;
 	flex-direction: column;
 	justify-content: center;
-}
-
-h1, p, img {
-	margin-top: 0;
-	margin-bottom: 18px;
 }
 
 h1 {
@@ -35,7 +31,6 @@ p {
 }
 
 a {
-	text-decoration: none;
 	color: #CCCCCC;
 	border-bottom: 1px solid #CCCCCC;
 }
