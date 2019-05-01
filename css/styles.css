@@ -3,13 +3,12 @@ html {
 }
 
 body {
-	width: 80%;
-	max-width: 737px;
+	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: "Hans Kendrick", sans-serif;
 	background: none;
-	color: #CCCCCC;
+	color: hsl(0, 0%, 90%);
 }
 
 section {
@@ -17,22 +16,22 @@ section {
 	min-height: 100vh;
 	flex-direction: column;
 	justify-content: center;
+	margin: 7px;
 }
 
 h1 {
-	font-size: 70.127px;
+	font-size: 59.69px;
 	font-weight: 500;
-	line-height: 1.3;
 }
 
 p {
-	font-size: 50px;
-	line-height: 1.5;
+	font-size: 51.02px;
+	margin-bottom: 49px;
 }
 
 a {
-	color: #CCCCCC;
-	border-bottom: 1px solid #CCCCCC;
+	color: hsl(0, 0%, 90%);
+	border-bottom: 1px solid hsl(0, 0%, 90%);
 }
 
 img {
@@ -43,6 +42,10 @@ img {
 
 @media (max-width: 768px) {
 	h1 {
-		font-size: 67.005px;
+		font-size: 43.61px;
+	}
+
+	p {
+		font-size: 31.86px;
 	}
 }
