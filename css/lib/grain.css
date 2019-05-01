@@ -14,12 +14,12 @@ div {
 }
 
 body, button, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
-	margin: 7px;
+	margin: calc(100vh / 117) calc(100vw / 117);
 	border: none;
 }
 
 button, input, pre, textarea {
-	padding: 7px;
+	padding: calc(100vh / 117) calc(100vw / 117);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -193,15 +193,15 @@ a {
 }
 
 .s-1 {
-	margin: 7px;
+	margin: calc(100vh / 117) calc(100vw / 117);
 }
 
 .s-2 {
-	margin: 49px;
+	margin: calc((100vh / 117) * 2) calc((100vw / 117) * 2);
 }
 
 .s-3 {
-	margin: 343px;
+	margin: calc((100vh / 117) * 3) calc((100vw / 117) * 3);
 }
 
 .w-1 {

@@ -16,7 +16,6 @@ section {
 	min-height: 100vh;
 	flex-direction: column;
 	justify-content: center;
-	margin: 7px;
 }
 
 h1 {
@@ -26,7 +25,7 @@ h1 {
 
 p {
 	font-size: 51.02px;
-	margin-bottom: 49px;
+	margin: calc((100vh / 117) * 3) calc((100vw / 117) * 3);
 }
 
 a {
