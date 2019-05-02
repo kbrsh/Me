@@ -13,13 +13,10 @@ div {
 	display: inline-block;
 }
 
-body, button, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
-	margin: calc(100vh / 117) calc(100vw / 117);
+body, button, code, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
+	margin: 0;
+	padding: 7px;
 	border: none;
-}
-
-button, input, pre, textarea {
-	padding: calc(100vh / 117) calc(100vw / 117);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -193,15 +190,43 @@ a {
 }
 
 .s-1 {
-	margin: calc(100vh / 117) calc(100vw / 117);
+	padding: 7px;
 }
 
 .s-2 {
-	margin: calc((100vh / 117) * 2) calc((100vw / 117) * 2);
+	padding: 14px;
 }
 
 .s-3 {
-	margin: calc((100vh / 117) * 3) calc((100vw / 117) * 3);
+	padding: 21px;
+}
+
+.s-4 {
+	padding: 28px;
+}
+
+.s-5 {
+	padding: 35px;
+}
+
+.s-6 {
+	padding: 42px;
+}
+
+.s-7 {
+	padding: 49px;
+}
+
+.s-8 {
+	padding: 56px;
+}
+
+.s-9 {
+	padding: 63px;
+}
+
+.s-10 {
+	padding: 70px;
 }
 
 .w-1 {

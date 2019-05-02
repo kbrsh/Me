@@ -25,7 +25,7 @@ h1 {
 
 p {
 	font-size: 51.02px;
-	margin: calc((100vh / 117) * 3) calc((100vw / 117) * 3);
+	padding: 35px;
 }
 
 a {
