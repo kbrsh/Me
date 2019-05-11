@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	max-width: 700px;
+	max-width: 830.115135479px;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: "Hans Kendrick", sans-serif;
@@ -21,11 +21,13 @@ section {
 h1 {
 	font-size: 59.69px;
 	font-weight: 500;
+	text-align: center;
 }
 
 p {
 	font-size: 51.02px;
-	padding: 35px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 a {
