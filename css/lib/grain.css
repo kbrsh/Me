@@ -9,11 +9,15 @@ html, body {
 	font-size: 19.89px;
 }
 
+body {
+	padding: 7px;
+}
+
 div {
 	display: inline-block;
 }
 
-body, button, code, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
+button, code, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
 	margin: 7px;
 	padding: 7px;
 	border: none;
