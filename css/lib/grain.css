@@ -14,7 +14,7 @@ div {
 }
 
 body, button, code, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
-	margin: 0;
+	margin: 7px;
 	padding: 7px;
 	border: none;
 }
