@@ -36,6 +36,7 @@ img {
 	position: absolute;
 	top: 7%;
 	left: 7%;
+	width: 40px;
 }
 
 @media (max-width: 768px) {

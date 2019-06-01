@@ -18,6 +18,7 @@ button, code, input {
 }
 
 button, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
+	width: calc(100% - 2 * 7px);
 	margin: 7px;
 	border: none;
 }
