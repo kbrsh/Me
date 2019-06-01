@@ -124,45 +124,56 @@ a {
 }
 
 .s-0 {
+	width: calc(100% - 2 * 7px);
 	margin: 7px;
 }
 
 .s-1 {
+	width: calc(100% - 2 * 11.9px);
 	margin: 11.9px;
 }
 
 .s-2 {
+	width: calc(100% - 2 * 20.23px);
 	margin: 20.23px;
 }
 
 .s-3 {
+	width: calc(100% - 2 * 34.391px);
 	margin: 34.391px;
 }
 
 .s-4 {
+	width: calc(100% - 2 * 58.4647px);
 	margin: 58.4647px;
 }
 
 .s-5 {
+	width: calc(100% - 2 * 99.38999px);
 	margin: 99.38999px;
 }
 
 .s-6 {
+	width: calc(100% - 2 * 168.962983px);
 	margin: 168.962983px;
 }
 
 .s-7 {
+	width: calc(100% - 2 * 287.237071px);
 	margin: 287.237071px;
 }
 
 .s-8 {
+	width: calc(100% - 2 * 488.303021px);
 	margin: 488.303021px;
 }
 
 .s-9 {
+	width: calc(100% - 2 * 830.115135px);
 	margin: 830.115135px;
 }
 
 .s-10 {
+	width: calc(100% - 2 * 1411.19573px);
 	margin: 1411.19573px;
 }
