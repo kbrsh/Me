@@ -13,7 +13,7 @@ div {
 	display: inline-block;
 }
 
-button, code, input {
+button, code, input, textarea {
 	padding: 7px;
 }
 
@@ -70,57 +70,46 @@ a {
 }
 
 .x-0 {
-	width: 100%;
 	max-width: 7px;
 }
 
 .x-1 {
-	width: 100%;
 	max-width: 11.9px;
 }
 
 .x-2 {
-	width: 100%;
 	max-width: 20.23px;
 }
 
 .x-3 {
-	width: 100%;
 	max-width: 34.391px;
 }
 
 .x-4 {
-	width: 100%;
 	max-width: 58.4647px;
 }
 
 .x-5 {
-	width: 100%;
 	max-width: 99.38999px;
 }
 
 .x-6 {
-	width: 100%;
 	max-width: 168.962983px;
 }
 
 .x-7 {
-	width: 100%;
 	max-width: 287.237071px;
 }
 
 .x-8 {
-	width: 100%;
 	max-width: 488.303021px;
 }
 
 .x-9 {
-	width: 100%;
 	max-width: 830.115135px;
 }
 
 .x-10 {
-	width: 100%;
 	max-width: 1411.19573px;
 }
 
