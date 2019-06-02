@@ -20,6 +20,7 @@ button, code, input, textarea {
 }
 
 button, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
+	width: auto;
 	margin: 7px;
 	border: none;
 }
@@ -71,47 +72,47 @@ a {
 }
 
 .x-0 {
-	width: 7px;
+	max-width: 7px;
 }
 
 .x-1 {
-	width: 11.9px;
+	max-width: 11.9px;
 }
 
 .x-2 {
-	width: 20.23px;
+	max-width: 20.23px;
 }
 
 .x-3 {
-	width: 34.391px;
+	max-width: 34.391px;
 }
 
 .x-4 {
-	width: 58.4647px;
+	max-width: 58.4647px;
 }
 
 .x-5 {
-	width: 99.38999px;
+	max-width: 99.38999px;
 }
 
 .x-6 {
-	width: 168.962983px;
+	max-width: 168.962983px;
 }
 
 .x-7 {
-	width: 287.237071px;
+	max-width: 287.237071px;
 }
 
 .x-8 {
-	width: 488.303021px;
+	max-width: 488.303021px;
 }
 
 .x-9 {
-	width: 830.115135px;
+	max-width: 830.115135px;
 }
 
 .x-10 {
-	width: 1411.19573px;
+	max-width: 1411.19573px;
 }
 
 .s-0 {
