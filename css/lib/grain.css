@@ -7,7 +7,7 @@ html, body {
 	padding: 0;
 	background-color: hsl(0, 0%, 100%);
 	color: hsl(0, 0%, 14%);
-	font-size: 17px;
+	font-size: 21px;
 }
 
 div {
@@ -30,39 +30,27 @@ button, code, input, p, pre, textarea {
 }
 
 h1 {
-	font-size: 43.607791px;
+	font-size: 45px;
 }
 
 h2 {
-	font-size: 37.271617px;
+	font-size: 36px;
 }
 
 h3 {
-	font-size: 31.856083px;
-}
-
-h4 {
-	font-size: 27.227421px;
-}
-
-h5 {
-	font-size: 23.2713px;
-}
-
-h6 {
-	font-size: 19.89px;
+	font-size: 28px;
 }
 
 p {
-	font-size: 17px;
+	font-size: 21px;
 }
 
 button, code, input, pre, textarea {
-	font-size: 14.529915px;
+	font-size: 15px;
 }
 
 a {
-	color: hsl(200, 100%, 29%);
-	border-bottom: 1px solid hsl(200, 100%, 29%);
+	color: hsl(200, 100%, 41%);
+	border-bottom: 1px solid hsl(200, 100%, 41%);
 	text-decoration: none;
 }
