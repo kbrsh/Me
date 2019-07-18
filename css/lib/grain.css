@@ -15,17 +15,17 @@ div {
 	flex-wrap: wrap;
 }
 
-button, code, div, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, textarea, ul, video {
+button, code, div, h1, h2, h3, h5, img, input, li, ol, p, pre, textarea, ul, video {
 	margin: 0;
 	padding: 0;
 	border: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
 	line-height: 1.3;
 }
 
-button, code, input, p, pre, textarea {
+button, code, h5, input, p, pre, textarea {
 	line-height: 1.5;
 }
 
@@ -45,7 +45,7 @@ p {
 	font-size: 21px;
 }
 
-button, code, input, pre, textarea {
+button, code, h5, input, pre, textarea {
 	font-size: 15px;
 }
 
