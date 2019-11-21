@@ -25,9 +25,9 @@ image = np.zeros((size, size, 4))
 
 for x in range(size):
 	for y in range(size):
-		image[y, x, 0] = 255
-		image[y, x, 1] = 255
-		image[y, x, 2] = 255
-		image[y, x, 3] = int(16.0 * random() / 0xFFFFFFFFFFFFFFFF)
+		image[y, x, 0] = 0
+		image[y, x, 1] = 0
+		image[y, x, 2] = 0
+		image[y, x, 3] = int(255.0 * (0.06 * random() / 0xFFFFFFFFFFFFFFFF))
 
 Image.fromarray(image.astype("uint8")).save("background.png")
