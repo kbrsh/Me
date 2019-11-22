@@ -17,8 +17,8 @@ body {
 	margin-top: 66px;
 }
 
-.name {
-	display: flex;
+.name, .bio {
+	justify-content: center;
 	align-items: center;
 	width: 100%;
 }
