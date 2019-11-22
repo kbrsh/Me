@@ -6,8 +6,8 @@ body {
 	display: flex;
 	justify-content: center;
 	font-family: "Crimson Pro", Georgia, sans-serif;
-	background: none;
 	color: hsl(0, 0%, 6%);
+	background: none;
 }
 
 .container {
@@ -17,10 +17,15 @@ body {
 	margin-top: 66px;
 }
 
-.name, .bio {
-	justify-content: center;
-	align-items: center;
+.head {
 	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 36px;
+}
+
+.head-title {
+	align-items: center;
 }
 
 .section {
@@ -32,12 +37,21 @@ body {
 	margin-bottom: 66px;
 }
 
-h1, .bold {
+.about p, .presence p {
+	margin-bottom: 21px;
+}
+
+.projects p {
+	margin-bottom: 10px;
+}
+
+h1, h2 {
 	font-weight: 700;
 }
 
-p {
-	margin-bottom: 15px;
+h2 {
+	font-size: 21px;
+	margin-bottom: 21px;
 }
 
 a {
