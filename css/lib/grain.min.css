@@ -5,7 +5,6 @@
 html {
 	background-color: hsl(0, 0%, 100%);
 	color: hsl(0, 0%, 14%);
-	font-size: 21px;
 }
 
 body, div {
@@ -32,15 +31,15 @@ h1, h4 {
 }
 
 h1 {
-	font-size: 45px;
+	font-size: 36px;
 }
 
-h4, p {
-	font-size: 21px;
+html, h4, p {
+	font-size: 15px;
 }
 
  code {
-	font-size: 15px;
+	font-size: 10px;
 }
 
 a {
@@ -50,16 +49,39 @@ a {
 }
 
 /* Sizing */
-.x-9 {width: 45px;}
-.x-30 {width: 465px;}
-.y-9 {height: 45px;}
+.s-x-8 {width: 36px;}
+.s-x-30 {width: 465px;}
+.s-y-8 {height: 36px;}
+.s-b-7 {border-radius: 14.285714285714285%;}
 
 /* Layout */
-.d-y {flex-direction: column;}
-.a-m-c {justify-content: center;}
-.a-c-l-c {align-items: center;}
-.m-x-3 > * {margin-left: 6px; margin-right: 6px;}
-.m-y-4 > * {margin-top: 10px; margin-bottom: 10px;}
-.m-y-7 > * {margin-top: 28px; margin-bottom: 28px;}
-.b-3 {border-radius: 6px;}
-.t-c {text-align: center;}
+.a-x-c {justify-content: center;}
+.a-y-l-c {align-items: center;}
+.a-t-c {text-align: center;}
+.m-x-1 > * {margin-left: 1px; margin-right: 1px;}
+.m-y-3 > * {margin-top: 6px; margin-bottom: 6px;}
+
+@media (min-width: 512px) {
+	/* Typography */
+
+	h1 {
+		font-size: 45px;
+	}
+
+	html, h4, p {
+		font-size: 21px;
+	}
+
+	 code {
+		font-size: 15px;
+	}
+
+	/* Sizing */
+	.s-x-8 {width: 43px;}
+	.s-x-30 {width: 472px;}
+	.s-y-8 {height: 43px;}
+
+	/* Layout */
+	.m-x-1 > * {margin-left: 8px; margin-right: 8px;}
+	.m-y-3 > * {margin-top: 13px; margin-bottom: 13px;}
+}
