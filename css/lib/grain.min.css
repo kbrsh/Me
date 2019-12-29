@@ -1,3 +1,7 @@
+:root {
+	--grain-scale: 1;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -25,21 +29,21 @@ h1, h4 {
 	line-height: 1.3;
 }
 
- code, p {
+code, p {
 	font-weight: 400;
 	line-height: 1.5;
 }
 
 h1 {
-	font-size: 36px;
+	font-size: calc(36px * var(--grain-scale));
 }
 
 html, h4, p {
-	font-size: 15px;
+	font-size: calc(15px * var(--grain-scale));
 }
 
- code {
-	font-size: 10px;
+code {
+	font-size: calc(10px * var(--grain-scale));
 }
 
 a {
@@ -49,39 +53,21 @@ a {
 }
 
 /* Sizing */
-.s-x-8 {width: 36px;}
-.s-x-30 {width: 465px;}
-.s-y-8 {height: 36px;}
+.s-x-8 {width: calc(36px * var(--grain-scale));}
+.s-x-26 {width: calc(351px * var(--grain-scale));}
+.s-y-8 {height: calc(36px * var(--grain-scale));}
 .s-b-7 {border-radius: 14.285714285714285%;}
 
 /* Layout */
 .a-x-c {justify-content: center;}
 .a-y-l-c {align-items: center;}
 .a-t-c {text-align: center;}
-.m-x-1 > * {margin-left: 1px; margin-right: 1px;}
-.m-y-3 > * {margin-top: 6px; margin-bottom: 6px;}
+.m-x-3 > * {margin-left: calc(6px * var(--grain-scale)); margin-right: calc(6px * var(--grain-scale));}
+.m-y-3 > * {margin-top: calc(6px * var(--grain-scale)); margin-bottom: calc(6px * var(--grain-scale));}
+.m-y-5 > * {margin-top: calc(15px * var(--grain-scale)); margin-bottom: calc(15px * var(--grain-scale));}
 
 @media (min-width: 512px) {
-	/* Typography */
-
-	h1 {
-		font-size: 45px;
+	:root {
+		--grain-scale: calc(10/7);
 	}
-
-	html, h4, p {
-		font-size: 21px;
-	}
-
-	 code {
-		font-size: 15px;
-	}
-
-	/* Sizing */
-	.s-x-8 {width: 43px;}
-	.s-x-30 {width: 472px;}
-	.s-y-8 {height: 43px;}
-
-	/* Layout */
-	.m-x-1 > * {margin-left: 8px; margin-right: 8px;}
-	.m-y-3 > * {margin-top: 13px; margin-bottom: 13px;}
 }
