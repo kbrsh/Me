@@ -1,5 +1,5 @@
 html {
-	background: url("../img/background.png"), linear-gradient(90deg, hsl(160, 100%, 98%), hsl(200, 100%, 98%));
+	background: url("/img/background.png"), linear-gradient(90deg, hsl(160, 100%, 98%), hsl(200, 100%, 98%));
 	font-family: "Crimson Pro", Georgia, sans-serif;
 	color: hsl(0, 0%, 6%);
 }
