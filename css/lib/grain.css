@@ -217,22 +217,22 @@ a {
 
 /* Layout */
 
-.a-x-l {justify-content: flex-start;}
-.a-x-r {justify-content: flex-end;}
+.a-x-s {justify-content: flex-start;}
+.a-x-e {justify-content: flex-end;}
 .a-x-c {justify-content: center;}
 .a-x-sb {justify-content: space-between;}
 .a-x-sa {justify-content: space-around;}
 .a-x-se {justify-content: space-evenly;}
 
-.a-y-l {align-content: flex-start;}
-.a-y-r {align-content: flex-end;}
+.a-y-s {align-content: flex-start;}
+.a-y-e {align-content: flex-end;}
 .a-y-c {align-content: center;}
 .a-y-sb {align-content: space-between;}
 .a-y-sa {align-content: space-around;}
 .a-y-se {align-content: space-evenly;}
 
-.a-y-l-l {align-items: flex-start;}
-.a-y-l-r {align-items: flex-end;}
+.a-y-l-s {align-items: flex-start;}
+.a-y-l-e {align-items: flex-end;}
 .a-y-l-c {align-items: center;}
 
 .a-t-l {text-align: left;}
