@@ -14,6 +14,8 @@ html {
 body, div {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 html, body, code, div, h1, h4, img, p {
@@ -62,9 +64,9 @@ a {
 .a-x-c {justify-content: center;}
 .a-y-l-c {align-items: center;}
 .a-t-c {text-align: center;}
-.m-x-3 > * {margin-left: calc(6px * var(--grain-scale)); margin-right: calc(6px * var(--grain-scale));}
-.m-y-3 > * {margin-top: calc(6px * var(--grain-scale)); margin-bottom: calc(6px * var(--grain-scale));}
-.m-y-5 > * {margin-top: calc(15px * var(--grain-scale)); margin-bottom: calc(15px * var(--grain-scale));}
+.m-x-3 > :not(.a-b) {margin-left: calc(6px * var(--grain-scale)); margin-right: calc(6px * var(--grain-scale));}
+.m-y-3 > :not(.a-b) {margin-top: calc(6px * var(--grain-scale)); margin-bottom: calc(6px * var(--grain-scale));}
+.m-y-5 > :not(.a-b) {margin-top: calc(15px * var(--grain-scale)); margin-bottom: calc(15px * var(--grain-scale));}
 
 @media (min-width: 512px) {
 	:root {

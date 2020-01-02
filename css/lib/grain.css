@@ -14,6 +14,8 @@ html {
 body, div {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 html, body, button, code, div, h1, h2, h3, h4, h5, img, input, li, ol, p, pre, textarea, ul, video {
