@@ -24,6 +24,15 @@ html, body, button, code, div, h1, h2, h3, h4, h5, img, input, li, ol, p, pre, t
 	border: none;
 }
 
+li {
+	margin-left: 1em;
+}
+
+pre code {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
 /* Typography */
 
 h1, h2, h3, h4 {
