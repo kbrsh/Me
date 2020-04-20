@@ -28,6 +28,6 @@ for x in range(size):
 		image[y, x, 0] = 0
 		image[y, x, 1] = 0
 		image[y, x, 2] = 0
-		image[y, x, 3] = int(255.0 * (0.06 * random() / 0xFFFFFFFFFFFFFFFF))
+		image[y, x, 3] = int(255.0 * (0.02 * random() / 0xFFFFFFFFFFFFFFFF))
 
 Image.fromarray(image.astype("uint8")).save("background.png")
