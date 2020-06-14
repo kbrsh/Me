@@ -69,7 +69,7 @@ a {
 /* Layout */
 .p-x-10 {padding-left: calc(55px * var(--grain-scale)); padding-right: calc(55px * var(--grain-scale));}
 .p-y-10 {padding-top: calc(55px * var(--grain-scale)); padding-bottom: calc(55px * var(--grain-scale));}
-.g-y-6 {margin-top: calc(-21px * var(--grain-scale) / 2); margin-bottom: calc(-21px * var(--grain-scale) / 2);} .g-y-6 > * {margin-top: calc(21px * var(--grain-scale) / 2); margin-bottom: calc(21px * var(--grain-scale) / 2);}
+.m-y-6 {margin-top: calc(-21px * var(--grain-scale) / 2); margin-bottom: calc(-21px * var(--grain-scale) / 2);} .m-y-6 > * {margin-top: calc(21px * var(--grain-scale) / 2); margin-bottom: calc(21px * var(--grain-scale) / 2);}
 
 @media (min-width: 512px) {
 	:root {
