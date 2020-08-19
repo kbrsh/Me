@@ -1,15 +1,59 @@
 html {
 	background: url("/img/background.png");
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
+	font-family: "Inter-Regular", "Helvetica", "Arial";
 }
 
-a {
-	color: hsl(272, 100%, 14%);
-	background-color: hsl(272, 100%, 94%);
+#logo {
+	height: 1.5em;
+	vertical-align: bottom;
 }
 
-.plain {
+.theme-light {
+	background-color: hsl(0, 0%, 100%);
 	color: hsl(0, 0%, 14%);
-	background: none;
+}
+
+.theme-light a {
+	color: hsl(0, 0%, 14%);
+}
+
+.theme-light :focus {
+	outline-color: hsl(0, 0%, 86%);
+}
+
+.theme-dark {
+	background-color: hsl(0, 0%, 14%);
+	color: hsl(0, 0%, 100%);
+}
+
+.theme-dark a {
+	color: hsl(0, 0%, 100%);
+}
+
+.theme-dark :focus {
+	outline-color: hsl(0, 0%, 29%);
+}
+
+.theme-image {
+	background-image: url("/img/background-image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: hsl(0, 0%, 100%);
+}
+
+.theme-image a {
+	color: hsl(0, 0%, 100%);
+}
+
+.theme-image :focus {
+	outline-color: hsl(0, 0%, 29%);
+}
+
+@font-face {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/Inter-Regular.otf") format("otf");
 }
