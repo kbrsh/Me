@@ -22,6 +22,10 @@ html, body, button, code, details, div, h1, h2, h3, h4, h5, img, input, li, ol, 
 	border: none;
 }
 
+button, summary {
+	cursor: pointer;
+}
+
 summary::-webkit-details-marker {
 	display: none
 }
