@@ -8,7 +8,9 @@ html {
 }
 
 .theme-light {
-	background: url("/img/background-light.png");
+	background-color: hsl(0, 0%, 100%);
+	background-image: url("/img/background.png");
+	background-blend-mode: overlay;
 	color: hsl(0, 0%, 14%);
 }
 
@@ -21,7 +23,9 @@ html {
 }
 
 .theme-dark {
-	background-image: url("/img/background-dark.png"), linear-gradient(hsl(0, 0%, 14%), hsl(0, 0%, 14%));
+	background-color: hsl(0, 0%, 14%);
+	background-image: url("/img/background.png");
+	background-blend-mode: overlay;
 	color: hsl(0, 0%, 100%);
 }
 
@@ -34,7 +38,9 @@ html {
 }
 
 .theme-image {
-	background-image: url("/img/background-dark.png"), url("/img/background-image.jpg");
+	background-color: transparent;
+	background-image: url("/img/background.png"), url("/img/background-image.jpg");
+	background-blend-mode: overlay;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
