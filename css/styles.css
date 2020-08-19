@@ -1,5 +1,4 @@
 html {
-	background: url("/img/background.png");
 	font-family: "Inter-Regular", "Helvetica", "Arial";
 }
 
@@ -9,7 +8,7 @@ html {
 }
 
 .theme-light {
-	background-color: hsl(0, 0%, 100%);
+	background: url("/img/background-light.png");
 	color: hsl(0, 0%, 14%);
 }
 
@@ -22,7 +21,7 @@ html {
 }
 
 .theme-dark {
-	background-color: hsl(0, 0%, 14%);
+	background-image: url("/img/background-dark.png"), linear-gradient(hsl(0, 0%, 14%), hsl(0, 0%, 14%));
 	color: hsl(0, 0%, 100%);
 }
 
@@ -35,11 +34,11 @@ html {
 }
 
 .theme-image {
-	background-image: url("/img/background-image.jpg");
+	background-image: url("/img/background-dark.png"), url("/img/background-image.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	background-size: cover;
 	color: hsl(0, 0%, 100%);
 }
 

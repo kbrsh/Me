@@ -21,13 +21,22 @@ def random():
 
 	return seed
 
-image = np.zeros((size, size, 4))
+imageLight = np.zeros((size, size, 4))
+imageDark = np.zeros((size, size, 4))
 
 for x in range(size):
 	for y in range(size):
-		image[y, x, 0] = 0
-		image[y, x, 1] = 0
-		image[y, x, 2] = 0
-		image[y, x, 3] = int(255.0 * (0.02 * random() / 0xFFFFFFFFFFFFFFFF))
+		opacity = random()
 
-Image.fromarray(image.astype("uint8")).save("background.png")
+		imageLight[y, x, 0] = 0
+		imageLight[y, x, 1] = 0
+		imageLight[y, x, 2] = 0
+		imageLight[y, x, 3] = int(255.0 * (0.02 * opacity / 0xFFFFFFFFFFFFFFFF))
+
+		imageDark[y, x, 0] = 255
+		imageDark[y, x, 1] = 255
+		imageDark[y, x, 2] = 255
+		imageDark[y, x, 3] = int(255.0 * (0.02 * opacity / 0xFFFFFFFFFFFFFFFF))
+
+Image.fromarray(imageLight.astype("uint8")).save("background-light.png")
+Image.fromarray(imageDark.astype("uint8")).save("background-dark.png")
