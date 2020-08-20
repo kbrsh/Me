@@ -45,15 +45,15 @@ html {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
-	color: hsl(0, 0%, 100%);
+	color: hsl(206, 0%, 100%);
 }
 
 .theme-image a {
-	color: hsl(0, 0%, 100%);
+	color: hsl(206, 0%, 100%);
 }
 
 .theme-image :focus {
-	outline-color: hsl(0, 0%, 29%);
+	outline-color: hsl(206, 14%, 57%);
 }
 
 @font-face {

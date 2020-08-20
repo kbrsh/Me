@@ -37,7 +37,7 @@ if (matchMedia("(prefers-color-scheme: dark)").matches) {
 }
 
 window.addEventListener("keydown", function(event) {
-	if (event.key === "Enter") {
+	if (event.key === "t") {
 		themeIndex = (themeIndex + 1) % themes.length;
 		updateTheme();
 	}
