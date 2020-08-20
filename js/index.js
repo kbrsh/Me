@@ -9,20 +9,20 @@ function updateTheme() {
 	switch (theme) {
 		case "light": {
 			html.className = "theme-light";
-			logo.src = "/img/logo-light.svg";
-			document.getElementById("favicon").href = "/img/favicon-light.png";
+			logo.src = "/img/logo-dark.svg";
+			document.getElementById("favicon").href = "/img/favicon-dark.png";
 			break;
 		}
 		case "dark": {
 			html.className = "theme-dark";
-			logo.src = "/img/logo-dark.svg";
-			document.getElementById("favicon").href = "/img/favicon-dark.png";
+			logo.src = "/img/logo-light.svg";
+			document.getElementById("favicon").href = "/img/favicon-light.png";
 			break;
 		}
 		case "image": {
 			html.className = "theme-image";
-			logo.src = "/img/logo-dark.svg";
-			document.getElementById("favicon").href = "/img/favicon-dark.png";
+			logo.src = "/img/logo-blue.svg";
+			document.getElementById("favicon").href = "/img/favicon-light.png";
 			break;
 		}
 	}
