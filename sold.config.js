@@ -10,9 +10,9 @@ Sold({
 	root: __dirname,
 	template: "template",
 	source: "src",
-	destination: "dist",
+	destination: "docs",
 	feed: {},
 	marked: {renderer}
 });
 
-exec("cp -r ./public/* ./dist");
+exec("cp -r ./public/* ./docs");
