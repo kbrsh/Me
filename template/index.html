@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="theme-light">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="composer of functions">
+		<meta name="author" content="Kabir Shah">
+
+		<title>Kabir Shah</title>
+
+		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
+
+		<link rel="stylesheet" type="text/css" href="/css/lib/grain.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
+
+			ga("create", "UA-70792533-4", "auto");
+			ga("send", "pageview");
+		</script>
+	</head>
+
+	<body>
+		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
+			<div class="d-y m-y-5">
+				<p>
+					<a href="/"><img id="logo" src="/images/logo-dark.svg" alt="Personal Logo"/></a>
+					<b>Kabir</b> &#183; composer of functions
+				</p>
+				<p>I'm a high-schooler in California tinkering with computers to create new experiences.</p>
+				<p>A perfectionist at heart, I dive deep into wherever my curiosity leads me. Functional programming, UI development, artificial intelligence, cryptography, quantum physics, linguistics, music, videography, economics, psychology — I've explored them all at some point.</p>
+			</div>
+
+			<div class="d-y m-y-5">
+				<h4>Present</h4>
+				<%- posts.find(post => post.file === "present").content %>
+			</div>
+
+			<div class="d-y m-y-5">
+				<h4>Past</h4>
+				<%- posts.find(post => post.file === "past").content %>
+				<details>
+					<summary>Work</summary>
+					<div class="d-y p-y-5 m-y-5">
+						<%- posts.find(post => post.file === "work").content %>
+					</div>
+				</details>
+				<details>
+					<summary>Projects</summary>
+					<div class="d-y p-y-5 m-y-5">
+						<%- posts.find(post => post.file === "projects").content %>
+					</div>
+				</details>
+			</div>
+
+			<div class="d-y m-y-5">
+				<h4>Future</h4>
+				<%- posts.find(post => post.file === "future").content %>
+			</div>
+
+			<div class="d-y m-y-5">
+				<h4>Elsewhere</h4>
+				<%- posts.find(post => post.file === "elsewhere").content %>
+			</div>
+
+			<div class="d-y m-y-5">
+				<h4>Fun</h4>
+				<%- posts.find(post => post.file === "fun").content %>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="/js/index.js"></script>
+	</body>
+</html>

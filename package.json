@@ -1,0 +1,19 @@
+{
+	"name": "me",
+	"private": true,
+	"devDependencies": {
+		"sold": "^3.0.0"
+	},
+	"scripts": {
+		"build": "sold"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kbrsh/Me.git"
+	},
+	"author": "Kabir Shah",
+	"bugs": {
+		"url": "https://github.com/kbrsh/Me/issues"
+	},
+	"homepage": "https://github.com/kbrsh/Me#readme"
+}
