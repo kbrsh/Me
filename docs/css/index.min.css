@@ -152,8 +152,96 @@ code {
 }
 
 /* Dark Theme */
+.theme-dark {
+	background-color: hsl(0, 0%, 14%);
+	background-image: url("/images/background.png");
+	background-blend-mode: overlay;
+	color: hsl(0, 0%, 100%);
+}
+
+.theme-dark a {
+	color: hsl(0, 0%, 100%);
+}
+
+.theme-dark :focus {
+	outline-color: hsl(0, 0%, 29%);
+}
+
+.theme-dark code {
+	color: hsl(206, 14%, 71%);
+}
+
+.theme-dark .token.string {
+	color: hsl(103, 14%, 55%);
+}
+
+.theme-dark .token.keyword {
+	color: hsl(294, 14%, 55%);
+}
+
+.theme-dark .token.number, .theme-dark .token.attr-name {
+	color: hsl(22, 29%, 55%);
+}
+
+.theme-dark .token.function, .theme-dark .token.tag {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-dark .token.attr-value {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-dark .token.comment {
+	color: hsl(206, 14%, 57%);
+}
 
 /* Image Theme */
+.theme-image {
+	background-color: transparent;
+	background-image: url("/images/background.png"), url("/images/background-image.jpg");
+	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: hsl(206, 0%, 100%);
+}
+
+.theme-image a {
+	color: hsl(206, 0%, 100%);
+}
+
+.theme-image :focus {
+	outline-color: hsl(206, 14%, 57%);
+}
+
+.theme-image code {
+	color: hsl(206, 14%, 71%);
+}
+
+.theme-image .token.string {
+	color: hsl(103, 14%, 55%);
+}
+
+.theme-image .token.keyword {
+	color: hsl(294, 14%, 55%);
+}
+
+.theme-image .token.number, .theme-image .token.attr-name {
+	color: hsl(22, 29%, 55%);
+}
+
+.theme-image .token.function, .theme-image .token.tag {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-image .token.attr-value {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-image .token.comment {
+	color: hsl(206, 14%, 57%);
+}
 
 @font-face {
 	font-family: "Inter";
