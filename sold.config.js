@@ -53,7 +53,7 @@ Sold({
 new PurgeCSS().purge({
 	content: ["docs/*.html"],
 	css: ["lib/*.css", "public/css/*.css"],
-	whitelist: "theme"
+	whitelist: ["theme"]
 }).then(css => {
 	fs.writeFileSync("./docs/css/index.min.css", css.map(file => file.css).join(""));
 });
