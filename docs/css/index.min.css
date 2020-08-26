@@ -90,7 +90,7 @@ button, code, input, pre {
 	}
 }
 html {
-	font-family: "Inter-Regular", "Helvetica", "Arial";
+	font-family: "Inter", "Helvetica", "Arial";
 }
 
 code {
@@ -259,5 +259,26 @@ code {
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
-	src: url("/fonts/Inter-Regular.otf") format("otf");
+	src: url("/fonts/Inter-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/fonts/Inter-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/Inconsolata-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/fonts/Inconsolata-Bold.ttf") format("truetype");
 }
