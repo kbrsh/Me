@@ -25,6 +25,10 @@ code {
 	background-color: hsl(0, 0%, 100%);
 	background-image: url("/images/background.png");
 	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 	color: hsl(0, 0%, 14%);
 }
 
@@ -69,6 +73,10 @@ code {
 	background-color: hsl(0, 0%, 14%);
 	background-image: url("/images/background.png");
 	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 	color: hsl(0, 0%, 100%);
 }
 
