@@ -136,6 +136,12 @@ code {
 	outline-color: hsl(206, 14%, 57%);
 }
 
+.theme-topography pre {
+	padding: calc(10px * var(--grain-scale));
+	border-radius: 6px;
+	background-color: hsl(206, 31%, 14%);
+}
+
 .theme-topography code {
 	color: hsl(206, 14%, 71%);
 }
