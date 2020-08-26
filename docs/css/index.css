@@ -116,10 +116,58 @@ code {
 	color: hsl(206, 14%, 57%);
 }
 
+/* Topography Theme */
+.theme-topography {
+	background-color: transparent;
+	background-image: url("/images/noise.png"), url("/images/topography-background.png");
+	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: hsl(206, 0%, 100%);
+}
+
+.theme-topography a {
+	color: hsl(206, 0%, 100%);
+}
+
+.theme-topography :focus {
+	outline-color: hsl(206, 14%, 57%);
+}
+
+.theme-topography code {
+	color: hsl(206, 14%, 71%);
+}
+
+.theme-topography .token.string {
+	color: hsl(103, 14%, 55%);
+}
+
+.theme-topography .token.keyword {
+	color: hsl(294, 14%, 55%);
+}
+
+.theme-topography .token.number, .theme-topography .token.boolean, .theme-topography .token.attr-name {
+	color: hsl(22, 29%, 55%);
+}
+
+.theme-topography .token.function, .theme-topography .token.tag {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-topography .token.attr-value {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-topography .token.comment {
+	color: hsl(206, 14%, 57%);
+}
+
 /* Image Theme */
 .theme-image {
 	background-color: transparent;
-	background-image: url("/images/noise.png"), url("/images/theme-image.jpg");
+	background-image: url("/images/noise.png"), url("/images/image-background.jpg");
 	background-blend-mode: overlay;
 	background-repeat: no-repeat;
 	background-position: center;

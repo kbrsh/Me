@@ -1,4 +1,4 @@
-var themes = ["light", "dark", "image"];
+var themes = ["light", "dark", "topography", "image"];
 var themeIndex = 0;
 var html = document.documentElement;
 var logo = document.getElementById("logo");
@@ -9,19 +9,25 @@ function updateTheme() {
 	switch (theme) {
 		case "light": {
 			html.className = "theme-light";
-			logo.src = "/images/logo-dark.svg";
+			logo.src = "/images/light-logo.svg";
 			document.getElementById("favicon").href = "/images/favicon-dark.png";
 			break;
 		}
 		case "dark": {
 			html.className = "theme-dark";
-			logo.src = "/images/logo-light.svg";
+			logo.src = "/images/dark-logo.svg";
+			document.getElementById("favicon").href = "/images/favicon-light.png";
+			break;
+		}
+		case "topography": {
+			html.className = "theme-topography";
+			logo.src = "/images/topography-logo.svg";
 			document.getElementById("favicon").href = "/images/favicon-light.png";
 			break;
 		}
 		case "image": {
 			html.className = "theme-image";
-			logo.src = "/images/logo-blue.svg";
+			logo.src = "/images/image-logo.svg";
 			document.getElementById("favicon").href = "/images/favicon-light.png";
 			break;
 		}
