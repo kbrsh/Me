@@ -46,6 +46,10 @@ a {
 	color: hsl(0, 0%, 14%);
 }
 
+:focus {
+	outline: 1px solid hsl(0, 0%, 86%);
+}
+
 /* Typography */
 
 h1, h4 {
