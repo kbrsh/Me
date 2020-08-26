@@ -114,7 +114,7 @@ code {
 /* Light Theme */
 .theme-light {
 	background-color: hsl(0, 0%, 100%);
-	background-image: url("/images/background.png");
+	background-image: url("/images/noise.png");
 	background-blend-mode: overlay;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -162,7 +162,7 @@ code {
 /* Dark Theme */
 .theme-dark {
 	background-color: hsl(0, 0%, 14%);
-	background-image: url("/images/background.png");
+	background-image: url("/images/noise.png");
 	background-blend-mode: overlay;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -210,7 +210,7 @@ code {
 /* Image Theme */
 .theme-image {
 	background-color: transparent;
-	background-image: url("/images/background.png"), url("/images/background-image.jpg");
+	background-image: url("/images/noise.png"), url("/images/theme-image.jpg");
 	background-blend-mode: overlay;
 	background-repeat: no-repeat;
 	background-position: center;

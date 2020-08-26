@@ -28,4 +28,4 @@ for x in range(size):
 	for y in range(size):
 		image[y, x, 0] = image[y, x, 1] = image[y, x, 2] = int(2.0 * variation / 0xFFFFFFFFFFFFFFFF * random() + (127.0 - variation))
 
-Image.fromarray(image.astype("uint8")).save("background.png")
+Image.fromarray(image.astype("uint8")).save("noise.png")
