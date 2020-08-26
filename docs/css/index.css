@@ -2,11 +2,25 @@ html {
 	font-family: "Inter-Regular", "Helvetica", "Arial";
 }
 
+code {
+	font-family: "Inconsolata", monospace;
+	font-size: calc(15px * var(--grain-scale));
+}
+
 #logo {
 	height: 1.5em;
 	vertical-align: bottom;
 }
 
+.katex {
+	font-size: calc(15px * var(--grain-scale));
+}
+
+.katex-display {
+	width: calc(351px * var(--grain-scale));
+}
+
+/* Light Theme */
 .theme-light {
 	background-color: hsl(0, 0%, 100%);
 	background-image: url("/images/background.png");
@@ -22,6 +36,35 @@ html {
 	outline-color: hsl(0, 0%, 86%);
 }
 
+.theme-light code {
+	color: hsl(206, 14%, 43%);
+}
+
+.theme-light .token.string {
+	color: hsl(103, 20%, 49%);
+}
+
+.theme-light .token.keyword {
+	color: hsl(294, 20%, 49%);
+}
+
+.theme-light .token.number, .theme-light .token.boolean, .theme-light .token.attr-name {
+	color: hsl(22, 29%, 49%);
+}
+
+.theme-light .token.function, .theme-light .token.tag {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-light .token.attr-value {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-light .token.comment {
+	color: hsl(206, 14%, 57%);
+}
+
+/* Dark Theme */
 .theme-dark {
 	background-color: hsl(0, 0%, 14%);
 	background-image: url("/images/background.png");
@@ -37,6 +80,35 @@ html {
 	outline-color: hsl(0, 0%, 29%);
 }
 
+.theme-dark code {
+	color: hsl(206, 14%, 71%);
+}
+
+.theme-dark .token.string {
+	color: hsl(103, 14%, 55%);
+}
+
+.theme-dark .token.keyword {
+	color: hsl(294, 14%, 55%);
+}
+
+.theme-dark .token.number, .theme-dark .token.boolean, .theme-dark .token.attr-name {
+	color: hsl(22, 29%, 55%);
+}
+
+.theme-dark .token.function, .theme-dark .token.tag {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-dark .token.attr-value {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-dark .token.comment {
+	color: hsl(206, 14%, 57%);
+}
+
+/* Image Theme */
 .theme-image {
 	background-color: transparent;
 	background-image: url("/images/background.png"), url("/images/background-image.jpg");
@@ -54,6 +126,34 @@ html {
 
 .theme-image :focus {
 	outline-color: hsl(206, 14%, 57%);
+}
+
+.theme-image code {
+	color: hsl(206, 14%, 71%);
+}
+
+.theme-image .token.string {
+	color: hsl(103, 14%, 55%);
+}
+
+.theme-image .token.keyword {
+	color: hsl(294, 14%, 55%);
+}
+
+.theme-image .token.number, .theme-image .token.boolean, .theme-image .token.attr-name {
+	color: hsl(22, 29%, 55%);
+}
+
+.theme-image .token.function, .theme-image .token.tag {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-image .token.attr-value {
+	color: hsl(206, 31%, 55%);
+}
+
+.theme-image .token.comment {
+	color: hsl(206, 14%, 57%);
 }
 
 @font-face {

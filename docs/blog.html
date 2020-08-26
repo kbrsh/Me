@@ -7,14 +7,12 @@
 		<meta name="description" content="composer of functions">
 		<meta name="author" content="Kabir Shah">
 
-		<title><%= post.name %> | Kabir Shah</title>
+		<title>Blog | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
 		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
 
-		<% if (post.math) { %>
-			<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"/>
-		<% } %>
+		
 
 		<script>
 			(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
@@ -32,10 +30,29 @@
 			<div class="d-y m-y-5">
 				<p>
 					<a href="/"><img id="logo" src="/images/logo-dark.svg" alt="Personal Logo"/></a>
-					<b><%= post.name %></b>
+					<b>Blog</b>
 				</p>
 
-				<%- post.content %>
+				<!--
+[Retrograde education](/retrograde-education)
+
+[Waiting to write down ideas](/waiting-to-write-down-ideas)
+
+[Rhetoric](/rhetoric)
+
+[Digital home](/digital-home)
+-->
+
+<p><a href="/optimal-virtual-dom">Optimal Virtual DOM</a></p>
+<p><a href="/inventing-monads">Inventing Monads</a></p>
+<p><a href="/interval-map">Interval Map</a></p>
+<p><a href="/template-optimizations">Template Optimizations</a></p>
+<p><a href="/identifying-ideas">Identifying Ideas</a></p>
+<p><a href="/inside-wade">Inside Wade</a></p>
+<p><a href="/machine-learning">Machine Learning</a></p>
+<p><a href="/introducing-moon">Introducing Moon</a></p>
+<p><a href="/centering-in-css">Centering in CSS</a></p>
+
 			</div>
 		</div>
 

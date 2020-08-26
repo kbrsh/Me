@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="theme-light">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="composer of functions">
+		<meta name="author" content="Kabir Shah">
+
+		<title>Optimal Virtual DOM | Kabir Shah</title>
+
+		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+
+		
+
+		<script>
+			(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
+
+			ga("create", "UA-70792533-4", "auto");
+			ga("send", "pageview");
+		</script>
+	</head>
+
+	<body>
+		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
+			<div class="d-y m-y-5">
+				<p>
+					<a href="/"><img id="logo" src="/images/logo-dark.svg" alt="Personal Logo"/></a>
+					<b>Optimal Virtual DOM</b>
+				</p>
+
+				<p>The virtual DOM is an idea that stems from functional programming in user interfaces. On every update new UI trees replace the current one. The problem arises, however, when this idea of an immutable, declarative view is applied in the browser.</p>
+<p>The DOM is inherently imperative; it is updated through mutating method calls. A virtual DOM bridges the gap between declarative and imperative environments, accepting lightweight trees while mutating the DOM under the hood.</p>
+<p>Still, a fast implementation of the virtual DOM can be a difficult task. As I&#39;ve worked on <a href="https://kbrsh.github.io/moon">Moon</a>, I&#39;ve tried many different approaches to the diffing algorithm, with the most <a href="https://github.com/kbrsh/moon/commit/e7a7cd9ab427be89cb7efee70df86dfe0401d770">recent revision</a> being explained here. It&#39;s good at benchmarks because it sticks to one principle: avoiding the DOM as much as possible.</p>
+<p>There are many ways to approach a virtual DOM implementation, each building on top of the previous one to gain better performance.</p>
+<h4 id="replace">Replace</h4>
+<p>The simplest way of implementing a virtual DOM is based on replacing elements. A new element created from a virtual node replaces the old one.</p>
+<pre><code>node<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">replaceChild</span><span class="token punctuation">(</span><span class="token function">nodeFromVNode</span><span class="token punctuation">(</span>vnode<span class="token punctuation">)</span><span class="token punctuation">,</span> node<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>This is wasteful because the DOM was not designed for large numbers of element creation, preferring granular method calls instead.</p>
+<h4 id="dom-diff">DOM Diff</h4>
+<p>Transforming the DOM through a diff and patch between a virtual node and the DOM allows for more precise changes. For example, updating a <code>className</code> property may check against the current state of the DOM.</p>
+<pre><code><span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>className <span class="token operator">!==</span> vnode<span class="token punctuation">.</span>className<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    node<span class="token punctuation">.</span>className <span class="token operator">=</span> vnode<span class="token punctuation">.</span>className<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre><p>Even so, <em>reading</em> the DOM is bad for performance. Virtual node object property access is much faster.</p>
+<h4 id="virtual-dom-diff">Virtual DOM Diff</h4>
+<p>Instead of diffing against the DOM, the previous virtual DOM can be stored and used instead.</p>
+<pre><code><span class="token keyword">if</span> <span class="token punctuation">(</span>vnodeOld<span class="token punctuation">.</span>className <span class="token operator">!==</span> vnodeNew<span class="token punctuation">.</span>className<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    node<span class="token punctuation">.</span>className <span class="token operator">=</span> vnodeNew<span class="token punctuation">.</span>className<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre><p>Now, the DOM is accessed only when it is necessary — to modify it. However, when diffing against children, this means accessing <code>childNodes</code>:</p>
+<pre><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> vchildOld <span class="token operator">=</span> vnodeOld<span class="token punctuation">.</span>children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> vchildNew <span class="token operator">=</span> vnodeNew<span class="token punctuation">.</span>children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>vchildOld <span class="token operator">!==</span> vchildNew<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Assume that `diff` takes an old virtual node, new virtual node, and a</span>
+        <span class="token comment">// DOM element to patch.</span>
+        <span class="token function">diff</span><span class="token punctuation">(</span>vchildOld<span class="token punctuation">,</span> vchildNew<span class="token punctuation">,</span> node<span class="token punctuation">.</span>childNodes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre><p>Even a loop using <code>firstChild</code> and <code>nextSibling</code> would still access the DOM on every iteration. This is slow. Moon gets around this by keeping track of children in a separate property on every DOM element called <code>MoonChildren</code>.</p>
+<pre><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> vchildOld <span class="token operator">=</span> vnodeOld<span class="token punctuation">.</span>children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> vchildNew <span class="token operator">=</span> vnodeNew<span class="token punctuation">.</span>children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>vchildOld <span class="token operator">!==</span> vchildNew<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">diff</span><span class="token punctuation">(</span>vchildOld<span class="token punctuation">,</span> vchildNew<span class="token punctuation">,</span> node<span class="token punctuation">.</span>MoonChildren<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre><h4 id="conclusion">Conclusion</h4>
+<p>A diff between virtual nodes, accessing the DOM only for modification, is the fastest approach to a virtual DOM. It avoids the DOM as much as possible, favoring plain JavaScript objects instead, making reading and writing much cheaper. Combined with using constructors for virtual nodes, storing events on DOM nodes, and using a purely functional design, Moon&#39;s view driver is faster than ever before.</p>
+
+			</div>
+		</div>
+
+		<script type="text/javascript" src="/js/index.js"></script>
+	</body>
+</html>

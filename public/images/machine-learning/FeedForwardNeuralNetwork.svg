@@ -1,0 +1,104 @@
+<svg width="382" height="400" viewBox="0 0 382 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>FeedForwardNeuralNetwork</title>
+<g id="Canvas" transform="translate(-6528 -1344)" figma:type="canvas">
+<g id="FeedForwardNeuralNetwork" figma:type="frame">
+<g id="Inputs" figma:type="frame">
+<g id="Weights" figma:type="frame">
+<g id="Line 2" figma:type="line">
+<use xlink:href="#path0_stroke" transform="matrix(-0.479672 0.877448 -0.877448 -0.479672 6668 1394)" fill="#666666"/>
+</g>
+<g id="Line 2" figma:type="line">
+<use xlink:href="#path0_stroke" transform="matrix(-0.479672 0.877448 -0.877448 -0.479672 6668 1544)" fill="#666666"/>
+</g>
+<g id="Line 2" figma:type="line">
+<use xlink:href="#path1_stroke" transform="matrix(-0.183497 0.98302 -0.98302 -0.183497 6669 1394)" fill="#666666"/>
+</g>
+<g id="Line 2" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="matrix(-0.479672 -0.877448 0.877448 -0.479672 6667.79 1694.66)" fill="#666666"/>
+</g>
+<g id="Line 2" figma:type="line">
+<use xlink:href="#path1_stroke" transform="matrix(-0.183497 -0.98302 0.98302 -0.183497 6669 1694)" fill="#666666"/>
+</g>
+<g id="Line 2" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="matrix(-0.479672 -0.877448 0.877448 -0.479672 6667.79 1544.66)" fill="#666666"/>
+</g>
+</g>
+<g id="Neuron" figma:type="frame">
+<g id="Ellipse 3" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(6528 1569)" fill="#309FDD"/>
+</g>
+<g id="2" figma:type="text">
+<use xlink:href="#path4_fill" transform="translate(6572 1607)" fill="#F5F5F5"/>
+</g>
+</g>
+<g id="Neuron" figma:type="frame">
+<g id="Ellipse 3" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(6528 1419)" fill="#309FDD"/>
+</g>
+<g id="1" figma:type="text">
+<use xlink:href="#path5_fill" transform="translate(6574 1457)" fill="#F5F5F5"/>
+</g>
+</g>
+</g>
+<g id="Outputs" figma:type="frame">
+<g id="Weights" figma:type="frame">
+<g id="Line 2" figma:type="vector">
+<use xlink:href="#path6_stroke" transform="matrix(0.26587 -0.964009 0.964009 0.26587 6767.52 1693.53)" fill="#666666"/>
+</g>
+<g id="Line 2" figma:type="line">
+<use xlink:href="#path7_stroke" transform="translate(6768 1545)" fill="#666666"/>
+</g>
+<g id="Line 2" figma:type="vector">
+<use xlink:href="#path8_stroke" transform="matrix(0.267415 0.963581 -0.963581 0.267415 6768.41 1393.27)" fill="#666666"/>
+</g>
+</g>
+<g id="Neuron" figma:type="frame">
+<g id="Ellipse 3" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(6810 1495)" fill="#6536DD"/>
+</g>
+<g id="1" figma:type="text">
+<use xlink:href="#path5_fill" transform="translate(6856 1533)" fill="#F5F5F5"/>
+</g>
+</g>
+</g>
+<g id="Hidden" figma:type="frame">
+<g id="Neuron" figma:type="frame">
+<g id="Ellipse 3" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(6668 1494)" fill="#DD9336"/>
+</g>
+<g id="2" figma:type="text">
+<use xlink:href="#path4_fill" transform="translate(6712 1532)" fill="#F5F5F5"/>
+</g>
+</g>
+<g id="Neuron" figma:type="frame">
+<g id="Ellipse 3" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(6668 1344)" fill="#DD9336"/>
+</g>
+<g id="1" figma:type="text">
+<use xlink:href="#path5_fill" transform="translate(6714 1382)" fill="#F5F5F5"/>
+</g>
+</g>
+<g id="Neuron" figma:type="frame">
+<g id="Ellipse 3" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(6668 1644)" fill="#DD9336"/>
+</g>
+<g id="3" figma:type="text">
+<use xlink:href="#path9_fill" transform="translate(6712 1682)" fill="#F5F5F5"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 0L 85.4751 0L 85.4751 -1L 0 -1L 0 0Z"/>
+<path id="path1_stroke" d="M 0 0L 228.886 0L 228.886 -1L 0 -1L 0 0Z"/>
+<path id="path2_stroke" d="M 0.00510386 1.37742L 85.9599 0.499974L 85.9497 -0.499974L -0.00510386 0.377474L 0.00510386 1.37742Z"/>
+<path id="path3_fill" d="M 100 50C 100 77.6142 77.6142 100 50 100C 22.3858 100 0 77.6142 0 50C 0 22.3858 22.3858 0 50 0C 77.6142 0 100 22.3858 100 50Z"/>
+<path id="path4_fill" d="M 0.86 18L 9.66 18L 9.66 16.98L 2.38 16.98L 6.72 12.52C 8.14 11.08 9.34 9.54 9.34 7.8C 9.34 5.2 7.32 3.78 5.18 3.78C 3.36 3.78 1.78 4.66 0.94 6.38L 1.84 6.92C 2.5 5.52 3.66 4.8 5.18 4.8C 6.88 4.8 8.26 5.88 8.26 7.8C 8.26 9.18 7.22 10.5 6 11.76L 0.86 17.04L 0.86 18Z"/>
+<path id="path5_fill" d="M 4 4L 0.34 5.26L 0.6 6.18L 3.84 5.16L 3.84 18L 4.9 18L 4.9 4L 4 4Z"/>
+<path id="path6_stroke" d="M -0.00312018 0.49999L 154.474 1.464L 154.48 0.464019L 0.00312018 -0.49999L -0.00312018 0.49999Z"/>
+<path id="path7_stroke" d="M 0 0L 42 0L 42 -1L 0 -1L 0 0Z"/>
+<path id="path8_stroke" d="M 0.0030623 1.46357L 157.33 0.499991L 157.323 -0.499991L -0.0030623 0.463591L 0.0030623 1.46357Z"/>
+<path id="path9_fill" d="M 5.82 9.82L 9.18 5L 9.18 4L 1.12 4L 1.12 5L 7.96 5L 4.42 10.02L 4.88 10.72L 5.18 10.72C 7.26 10.72 8.78 11.94 8.78 13.96C 8.78 15.98 7.26 17.2 5.22 17.2C 3.46 17.2 2.16 16.44 1.64 15.04L 0.76 15.56C 1.44 17.28 3.18 18.22 5.22 18.22C 7.7 18.22 9.84 16.66 9.84 13.96C 9.84 11.5 8.04 10.04 5.82 9.82Z"/>
+</defs>
+</svg>

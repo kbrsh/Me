@@ -2,6 +2,9 @@
 	"name": "me",
 	"private": true,
 	"devDependencies": {
+		"katex": "^0.11.1",
+		"prismjs": "^1.21.0",
+		"purgecss": "^2.3.0",
 		"sold": "^3.0.0"
 	},
 	"scripts": {
