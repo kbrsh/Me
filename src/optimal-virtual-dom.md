@@ -1,5 +1,5 @@
 ---
-name: Optimal Virtual DOM
+name: Optimal virtual DOM
 ---
 
 The virtual DOM is an idea that stems from functional programming in user interfaces. On every update new UI trees replace the current one. The problem arises, however, when this idea of an immutable, declarative view is applied in the browser.

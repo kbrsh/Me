@@ -1,5 +1,5 @@
 ---
-name: Interval Map
+name: Interval map
 math: true
 ---
 

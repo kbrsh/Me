@@ -1,5 +1,5 @@
 ---
-name: Identifying Ideas
+name: Identifying ideas
 ---
 
 Your perspective on problems is critical. Instead of treating a problem as an obstacle, it is important to treat it as an opportunity instead.

@@ -9,22 +9,24 @@ name: Blog
 
 [Rhetoric](/rhetoric)
 
+[Open source business](/open-source-business)
+
 [Digital home](/digital-home)
 -->
 
-[Optimal Virtual DOM](/optimal-virtual-dom)
+[Optimal virtual DOM](/optimal-virtual-dom)
 
-[Inventing Monads](/inventing-monads)
+[Inventing monads](/inventing-monads)
 
-[Interval Map](/interval-map)
+[Interval map](/interval-map)
 
-[Template Optimizations](/template-optimizations)
+[Template optimizations](/template-optimizations)
 
-[Identifying Ideas](/identifying-ideas)
+[Identifying ideas](/identifying-ideas)
 
 [Inside Wade](/inside-wade)
 
-[Machine Learning](/machine-learning)
+[Machine learning](/machine-learning)
 
 [Introducing Moon](/introducing-moon)
 

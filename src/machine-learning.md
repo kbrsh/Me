@@ -1,5 +1,5 @@
 ---
-name: Machine Learning
+name: Machine learning
 math: true
 ---
 
