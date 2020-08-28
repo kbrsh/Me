@@ -12,7 +12,7 @@ To depict:
 
 * Ideas: [theses](https://en.wikipedia.org/wiki/Thesis_statement), [themes](https://en.wikipedia.org/wiki/Theme_(narrative))
 * Imagery: [settings](https://en.wikipedia.org/wiki/Setting_(narrative)), [characters](https://en.wikipedia.org/wiki/Character_(arts)), [actions](https://en.wikipedia.org/wiki/Action_(narrative))
-* Tone & Mood: [emotions](https://en.wikipedia.org/wiki/Emotion)
+* Emotion: [tones](https://en.wikipedia.org/wiki/Tone_(literature)), [moods](https://en.wikipedia.org/wiki/Mood_(literature))
 
 Appealing to:
 
