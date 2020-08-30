@@ -5,6 +5,8 @@ name: Blog
 <!--
 [Retrograde education](/retrograde-education)
 
+[Rethinking](/rethinking)
+
 [Waiting to write down ideas](/waiting-to-write-down-ideas)
 
 [Rhetoric](/rhetoric)
