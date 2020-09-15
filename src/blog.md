@@ -9,12 +9,12 @@ name: Blog
 
 [Waiting to write down ideas](/waiting-to-write-down-ideas)
 
-[Rhetoric](/rhetoric)
-
 [Open source business](/open-source-business)
 
 [Digital home](/digital-home)
 -->
+
+[Rhetoric](/rhetoric)
 
 [Optimal virtual DOM](/optimal-virtual-dom)
 
