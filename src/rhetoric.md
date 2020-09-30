@@ -2,11 +2,11 @@
 name: Rhetoric
 ---
 
-Rhetoric is the art of persuading or making an argument. Due to some source of exigence, authors use:
+Rhetoric is the art of persuading or making an argument. Due to some source of exigence, authors prove a point to fulfil their purpose using:
 
-* Words, or diction: [tropes](https://en.wikipedia.org/wiki/Trope_(literature))
-* Sentences, or syntax: [schemes](https://en.wikipedia.org/wiki/Scheme_(linguistics))
 * Paragraphs, or structure: [forms](https://en.wikipedia.org/wiki/List_of_narrative_forms), [genres](https://en.wikipedia.org/wiki/Literary_genre), [plots](https://en.wikipedia.org/wiki/Plot_(narrative)), [dispositio](https://en.wikipedia.org/wiki/Dispositio)
+* Sentences, or syntax: [schemes](https://en.wikipedia.org/wiki/Scheme_(linguistics))
+* Words, or diction: [tropes](https://en.wikipedia.org/wiki/Trope_(literature))
 
 To depict:
 
@@ -19,5 +19,3 @@ Appealing to:
 * The author, or ethos: credentials, [anecdotes](https://en.wikipedia.org/wiki/Anecdote)
 * The subject, or logos: induction, deduction, logic
 * The audience, or pathos: sympathetic, antithetic, apathetic
-
-to prove a point and fulfil their purpose.
