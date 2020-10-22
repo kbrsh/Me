@@ -12,6 +12,8 @@ name: Blog
 [Open source business](/open-source-business)
 
 [Digital home](/digital-home)
+
+[Consumption and creation](/consumption-and-creation)
 -->
 
 [Rhetoric](/rhetoric)
