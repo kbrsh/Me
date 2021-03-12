@@ -58,4 +58,5 @@ void main() {
 	vec3 c = mix(c1, c2, n);
 
 	gl_FragColor = vec4(c, n*3./7. + 4./7.);
+	//gl_FragColor = vec4(c, snoise(st*n + seed)*3./7. + 4./7.);
 }
