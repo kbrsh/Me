@@ -716,6 +716,11 @@ a {
   text-decoration: underline;
 }
 
+pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 code {
   font-family: "Inconsolata", monospace;
   font-size: calc(15px*var(--grain-scale));
