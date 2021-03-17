@@ -25,12 +25,12 @@ function loop() {
 
 function download(next) {
 	shaderVertex = gl.createShader(gl.VERTEX_SHADER)
-	gl.shaderSource(shaderVertex, "attribute vec2 a_position; void main() { gl_Position = vec4(a_position, 0, 1);}");
+	gl.shaderSource(shaderVertex, "attribute vec2 a_position; void main() { gl_Position = vec4(a_position, 0, 1);}")
 	gl.compileShader(shaderVertex)
 
 	fetch(document.querySelector("#shader-gradient").src)
-		.then(res => res.text())
-		.then(shaderGradientSource => {
+		.then(function(res) {return res.text()})
+		.then(function(shaderGradientSource) {
 			shaderGradient = gl.createShader(gl.FRAGMENT_SHADER)
 			gl.shaderSource(shaderGradient, shaderGradientSource)
 			gl.compileShader(shaderGradient)
