@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Present | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,19 +26,17 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Present</b>
-				</p>
-
-				<p>I&#39;m a junior in high school studying computer science as a part of our engineering academy. I co-founded <a href="https://cohack.co">Cohack</a>, where I teach students to code and host hackathons. At the same time, I&#39;m going down the rabbit hole of programming language theory and user interface development with <a href="https://moonjs.org">Moon</a>.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Present
+			</h4>
+			<p>I&#39;m a junior in high school studying computer science as a part of our engineering academy. I co-founded <a href="https://cohack.co">Cohack</a>, where I teach students to code and host hackathons. At the same time, I&#39;m going down the rabbit hole of programming language theory and user interface development with <a href="https://moonjs.org">Moon</a>.</p>
 <p>In my free time, I play soccer, lacrosse, guitar, and video games. I enjoy skateboarding and snowboarding too, but I&#39;m not too good at either.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

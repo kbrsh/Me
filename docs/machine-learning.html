@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Machine learning | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 			<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"/>
@@ -28,14 +28,13 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Machine learning</b>
-				</p>
-
-				<p>Artificial Intelligence is a topic that has been attracting a lot of interest from people lately, myself included. Around a 6 months ago, I became interested in machine learning.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Machine learning
+			</h4>
+			<p>Artificial Intelligence is a topic that has been attracting a lot of interest from people lately, myself included. Around a 6 months ago, I became interested in machine learning.</p>
 <p>I tried looking for information on the internet, but most of the articles I found included complex mathematic notations and often used a machine learning framework to show code samples. While the frameworks are great, I think it is just as important to know what exactly goes on under the hood.</p>
 <p>This will be a series of blog posts set to help you understand how machine learning works, with a in-depth guide and code samples. The code samples will use Python, with NumPy. NumPy allows for complex math operations to be extremely simple in code, and is not specifically for machine learning. We will be using it for matrix multiplication, dot products, etc.</p>
 <h4 id="what-is-machine-learning">What is Machine Learning?</h4>
@@ -91,9 +90,8 @@
 <h4 id="conclusion">Conclusion</h4>
 <p>This article is a work in progress. Feel free to give any suggestions or fixes.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

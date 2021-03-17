@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Template optimizations | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,14 +26,13 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Template optimizations</b>
-				</p>
-
-				<p>The majority of JavaScript libraries/frameworks use either templates or JSX to define a view. Templates allow for a well-defined structure, using a special syntax for binding data to the view. JSX allows for JavaScript to be used anywhere in the template, which adds a lot of power but can result in repetitive code.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Template optimizations
+			</h4>
+			<p>The majority of JavaScript libraries/frameworks use either templates or JSX to define a view. Templates allow for a well-defined structure, using a special syntax for binding data to the view. JSX allows for JavaScript to be used anywhere in the template, which adds a lot of power but can result in repetitive code.</p>
 <p><a href="http://moonjs.ga">Moon</a> is a 7kb library with syntax inspired by Vue. Both Moon and Vue use a template system (although JSX can be used with Vue as well). To implement the template syntax, they have compilers that optimize the templates in different ways.</p>
 <h4 id="virtual-dom">Virtual DOM</h4>
 <p>In the end, a compiler has the job of converting the template syntax into a function that can return a virtual DOM tree.</p>
@@ -309,9 +308,8 @@
 <h4 id="conclusion">Conclusion</h4>
 <p>In the end, Vue only optimizes in a few test cases, in which there were static elements inside of a static parent element. However, Moon detected many of the static elements and hoisted them out of the render function so that the static virtual nodes could be reused. This also allows for the virtual DOM engine to skip over static elements because they have the same reference on every render.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

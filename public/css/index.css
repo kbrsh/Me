@@ -1,221 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--grain-scale: 1;
+}
+
+@media (min-width: 512px) {
+	:root {
+		--grain-scale: calc(9/7);
+	}
+}
+
 html {
 	font-family: "Inter", "Helvetica", "Arial";
+	-webkit-font-smoothing: antialiased;
+	@apply text-5;
+}
+
+h4 {
+	@apply text-5;
+}
+
+p {
+	@apply text-gray-21;
+}
+
+a {
+	@apply underline;
 }
 
 code {
 	font-family: "Inconsolata", monospace;
-	font-size: calc(15px * var(--grain-scale));
+	@apply text-5;
 }
 
 #logo {
+	display: inline;
 	height: 1.5em;
 	vertical-align: bottom;
 }
 
-.katex {
-	font-size: calc(15px * var(--grain-scale));
+#canvas {
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
 }
 
-.katex-display {
-	width: calc(351px * var(--grain-scale));
+.experience {
+	@apply max-w-full p-10;
 }
 
-/* Light Theme */
-.theme-light {
-	background-color: hsl(0, 0%, 100%);
-	background-image: url("/images/noise.png");
-	background-blend-mode: overlay;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	color: hsl(0, 0%, 14%);
+.experience > div {
+	@apply flex py-5;
 }
 
-.theme-light a {
-	color: hsl(0, 0%, 14%);
+.experience > div > p {
+	@apply flex-shrink-0 w-15;
 }
 
-.theme-light :focus {
+.experience > div > div {
+	@apply flex flex-wrap -m-5;
+}
+
+.experience > div > div > div {
+	@apply w-20 m-5;
+}
+
+:focus {
 	outline-color: hsl(0, 0%, 86%);
 }
 
-.theme-light code {
+code {
 	color: hsl(206, 14%, 43%);
 }
 
-.theme-light .token.string {
+.token.string {
 	color: hsl(103, 20%, 49%);
 }
 
-.theme-light .token.keyword {
+.token.keyword {
 	color: hsl(294, 20%, 49%);
 }
 
-.theme-light .token.number, .theme-light .token.boolean, .theme-light .token.attr-name {
+.token.number, .token.boolean, .token.attr-name {
 	color: hsl(22, 29%, 49%);
 }
 
-.theme-light .token.function, .theme-light .token.tag {
+.token.function, .token.tag {
 	color: hsl(206, 31%, 55%);
 }
 
-.theme-light .token.attr-value {
+.token.attr-value {
 	color: hsl(206, 31%, 55%);
 }
 
-.theme-light .token.comment {
+.token.comment {
 	color: hsl(206, 14%, 57%);
 }
 
-/* Dark Theme */
-.theme-dark {
-	background-color: hsl(0, 0%, 14%);
-	background-image: url("/images/noise.png");
-	background-blend-mode: overlay;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	color: hsl(0, 0%, 100%);
+.katex {
+	@apply text-5;
 }
 
-.theme-dark a {
-	color: hsl(0, 0%, 100%);
-}
-
-.theme-dark :focus {
-	outline-color: hsl(0, 0%, 29%);
-}
-
-.theme-dark code {
-	color: hsl(206, 14%, 71%);
-}
-
-.theme-dark .token.string {
-	color: hsl(103, 14%, 55%);
-}
-
-.theme-dark .token.keyword {
-	color: hsl(294, 14%, 55%);
-}
-
-.theme-dark .token.number, .theme-dark .token.boolean, .theme-dark .token.attr-name {
-	color: hsl(22, 29%, 55%);
-}
-
-.theme-dark .token.function, .theme-dark .token.tag {
-	color: hsl(206, 31%, 55%);
-}
-
-.theme-dark .token.attr-value {
-	color: hsl(206, 31%, 55%);
-}
-
-.theme-dark .token.comment {
-	color: hsl(206, 14%, 57%);
-}
-
-/* Topography Theme */
-.theme-topography {
-	background-color: transparent;
-	background-image: url("/images/noise.png"), url("/images/topography-background.png");
-	background-blend-mode: overlay;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	color: hsl(206, 0%, 100%);
-}
-
-.theme-topography a {
-	color: hsl(206, 0%, 100%);
-}
-
-.theme-topography :focus {
-	outline-color: hsl(206, 14%, 57%);
-}
-
-.theme-topography pre {
-	padding: calc(10px * var(--grain-scale));
-	border-radius: 6px;
-	background-color: hsl(206, 31%, 14%);
-}
-
-.theme-topography code {
-	color: hsl(206, 14%, 71%);
-}
-
-.theme-topography .token.string {
-	color: hsl(103, 14%, 55%);
-}
-
-.theme-topography .token.keyword {
-	color: hsl(294, 14%, 55%);
-}
-
-.theme-topography .token.number, .theme-topography .token.boolean, .theme-topography .token.attr-name {
-	color: hsl(22, 29%, 55%);
-}
-
-.theme-topography .token.function, .theme-topography .token.tag {
-	color: hsl(206, 31%, 55%);
-}
-
-.theme-topography .token.attr-value {
-	color: hsl(206, 31%, 55%);
-}
-
-.theme-topography .token.comment {
-	color: hsl(206, 14%, 57%);
-}
-
-/* Image Theme */
-.theme-image {
-	background-color: transparent;
-	background-image: url("/images/noise.png"), url("/images/image-background.jpg");
-	background-blend-mode: overlay;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	color: hsl(206, 0%, 100%);
-}
-
-.theme-image a {
-	color: hsl(206, 0%, 100%);
-}
-
-.theme-image :focus {
-	outline-color: hsl(206, 14%, 57%);
-}
-
-.theme-image code {
-	color: hsl(206, 14%, 71%);
-}
-
-.theme-image .token.string {
-	color: hsl(103, 14%, 55%);
-}
-
-.theme-image .token.keyword {
-	color: hsl(294, 14%, 55%);
-}
-
-.theme-image .token.number, .theme-image .token.boolean, .theme-image .token.attr-name {
-	color: hsl(22, 29%, 55%);
-}
-
-.theme-image .token.function, .theme-image .token.tag {
-	color: hsl(206, 31%, 55%);
-}
-
-.theme-image .token.attr-value {
-	color: hsl(206, 31%, 55%);
-}
-
-.theme-image .token.comment {
-	color: hsl(206, 14%, 57%);
+.katex-display {
+	@apply w-26;
 }
 
 @font-face {

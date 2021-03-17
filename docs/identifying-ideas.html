@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Identifying ideas | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,14 +26,13 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Identifying ideas</b>
-				</p>
-
-				<p>Your perspective on problems is critical. Instead of treating a problem as an obstacle, it is important to treat it as an opportunity instead.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Identifying ideas
+			</h4>
+			<p>Your perspective on problems is critical. Instead of treating a problem as an obstacle, it is important to treat it as an opportunity instead.</p>
 <p>People often try to come up with ideas by creating solutions <em>first</em> and then seeing what problems it solves <em>after</em>. This process is the <em>opposite</em> of how to find a plausible idea.</p>
 <p>A while ago, I began working on a web application. The code became extremely bloated, and the user interface was painfully slow. Instead of viewing this as an obstacle, I saw it as an opportunity. I set out to create a minimal, blazing fast user interface library that worked for me, and it turned into <a href="https://kbrsh.github.io/moon">Moon</a>.</p>
 <p>It may seem like you can&#39;t find a problem with your daily life. That&#39;s because you need to change your perspective on things. A problem often won&#39;t be hard to find. Excellent ideas are always hiding in <em>plain sight</em>.</p>
@@ -53,9 +52,8 @@
 <p>Keeping track of your problems and possible solutions can help you find inspiration for even more ideas. On top of that, you&#39;ll be able to pick and choose what problem you want to solve and when you want to build it.</p>
 <p>Find problems you face and turn them into an opportunity. An idea should contribute to improving lives by solving a meaningful problem that you are passionate about addressing.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

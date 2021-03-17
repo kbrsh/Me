@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Inventing monads | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,14 +26,13 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Inventing monads</b>
-				</p>
-
-				<p>Monads are an esoteric concept to many, resulting in hundreds of tutorials, guides, and examples attempting to explain them. Curious developers might look into them only to find the classic answer, &quot;Monads are monoids in the category of endofunctors&quot;. In the end, they&#39;re just another abstraction to help deal with repetitive patterns in functional code.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Inventing monads
+			</h4>
+			<p>Monads are an esoteric concept to many, resulting in hundreds of tutorials, guides, and examples attempting to explain them. Curious developers might look into them only to find the classic answer, &quot;Monads are monoids in the category of endofunctors&quot;. In the end, they&#39;re just another abstraction to help deal with repetitive patterns in functional code.</p>
 <p>This guide will use JavaScript instead of a pure functional programming language (e.g. Haskell) to make things more approachable for developers accustomed to imperative languages. It will, however, assume you have basic knowledge of functional programming, including currying and lambdas.</p>
 <p>Think of monads as a way to overload a semicolon. It might sound a little crazy at first, but imagine being able to override the semicolon to reduce boilerplate in specific code blocks. That&#39;s basically how monads are used in practice.</p>
 <p>As a final note before we start, I am by no means an expert on this topic. I&#39;m fifteen years old with good knowledge of mostly high school level math, and may have missed some parts. Monads are complex and closely tied with category theory, which is a very abstract and vast branch of mathematics that can be hard to grok. If I missed something, feel free to reach out and let me know — I&#39;m always open to learning something new.</p>
@@ -285,9 +284,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li><p><a href="http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html">You Could Have Invented Monads! (And Maybe You Already Have.)</a></p></li><li><p><a href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">Functors, Applicatives, And Monads In Pictures</a></p></li><li><p><a href="http://adit.io/posts/2013-06-10-three-useful-monads.html">Three Useful Monads</a></p></li><li><p><a href="https://en.wikipedia.org/wiki/Monad_(functional_programming)">Monad (functional programming)</a></p></li></ul>
 <p>In the end, the monad is just an abstraction that has access to the inner workings of block expressions, giving it control over how things flow from input to function.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

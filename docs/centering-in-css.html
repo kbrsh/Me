@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Centering in CSS | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,14 +26,13 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Centering in CSS</b>
-				</p>
-
-				<p>Unfortunately, there is no built in support for centering in CSS, but there are some ways to do it. I will be talking about two of the most effective ways to do it.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Centering in CSS
+			</h4>
+			<p>Unfortunately, there is no built in support for centering in CSS, but there are some ways to do it. I will be talking about two of the most effective ways to do it.</p>
 <h4 id="flexbox">Flexbox</h4>
 <p>Using flexbox is a clean, hack-free way to center elements. The only downside is browser support, don&#39;t use this if you need to support IE 10 and below.</p>
 <p>Say you have the following HTML:</p>
@@ -73,9 +72,8 @@
     <span class="token comment">/* text-align: center; is optional */</span>
 <span class="token punctuation">}</span></code></pre><p>There, now you can center things supporting IE 6 and up.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

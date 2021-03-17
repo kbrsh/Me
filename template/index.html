@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		<script>
 			(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
@@ -24,43 +24,142 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Kabir</b> &#183; composer of functions
-				</p>
-				<p>I'm a high-schooler in California making human-centric experiences that empower creativity.</p>
-				<p>Driven by curiosity, I fluidly cross boundaries and explore intersections. Functional programming, UI development, artificial intelligence, cryptography, quantum physics, linguistics, music, videography, economics, psychology — I've studied them all at some point.</p>
-				<p><a href="/blog">Blog</a> &#183; <a href="/work">Work</a> &#183; <a href="/projects">Projects</a></p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Kabir
+			</h4>
+			<p>I'm a high school junior in California studying computer science in our engineering academy. I teach students to code and host hackathons at <a href="https://cohack.co">Cohack</a>. I explore user interfaces and compiler theory with <a href="https://moonjs.org">Moon</a>.</p>
+			<p>Last summer, I interned as a junior engineer on the core team at <a href="https://webflow.com">Webflow</a>, a company pushing the limits of no-code.</p>
+			<p>Over the past few years, I've been obsessed with open-source projects. Some highlights include <a href="https://github.com/kbrsh/wade">Wade</a>, a 1kb JavaScript text search library; <a href="https://kbrsh.github.io/wing">Wing</a>, a beautiful CSS library; and <a href="https://github.com/kbrsh/slash">Slash</a>, a small hash function.</p>
+			<p>Find my writing on my <a href="/blog">blog</a>, my thoughts on <a href="https://twitter.com/kbrshah">Twitter</a>, and my code on <a href="https://github.com/kbrsh">GitHub</a>. Reach out by <a href="mailto:iamkbrsh@gmail.com">email</a>.</p>
+		</div>
+		<div class="experience">
+			<div>
+				<p>Now</p>
+				<div>
+					<div>
+						<h4><a href="https://cohack.co">Cohack</a></h4>
+						<p>Teaching students to code and hosting hackathons.</p>
+					</div>
+					<div>
+						<h4><a href="https://moonjs.org">Moon</a></h4>
+						<p>Architecting and implementing a UI library and compiler.</p>
+					</div>
+				</div>
 			</div>
-
-			<div class="d-y m-y-5">
-				<h4>Present</h4>
-				<%- posts.find(post => post.file === "present").content %>
+			<div>
+				<p>2020</p>
+				<div>
+					<div>
+						<h4><a href="https://webflow.com">Webflow</a></h4>
+						<p>Worked on core product and UI with React; applied FP, data structures, PLT, and optimization.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/grain">Grain</a></h4>
+						<p>Created a library for structural web application styles.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/nox">Nox</a></h4>
+						<p>Created an elegant color scheme and Vim configuration.</p>
+					</div>
+				</div>
 			</div>
-
-			<div class="d-y m-y-5">
-				<h4>Past</h4>
-				<%- posts.find(post => post.file === "past").content %>
+			<div>
+				<p>2019</p>
+				<div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/wade">Wade</a></h4>
+						<p>Created a 1kb JavaScript search library and algorithm.</p>
+					</div>
+					<div>
+						<h4><a href="https://kbrsh.github.io/wing">Wing</a></h4>
+						<p>Created a beautiful CSS framework for minimalists.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/sold">Sold</a></h4>
+						<p>Created a static site generator for blogging.</p>
+					</div>
+					<div>
+						<h4><a href="https://kbrsh.github.io/throw">Throw</a></h4>
+						<p>Created a website that stores throwaway notes in the URL.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/valon">Valon</a></h4>
+						<p>Conceptualized a constructed language based on functions.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kabir-shah/conode">Conode</a></h4>
+						<p>Created a collaborative project-based learning tool.</p>
+					</div>
+					<div>
+						<h4><a href="https://upshot.github.io">Upshot</a></h4>
+						<p>Created a tool to calculate grades after an assignment.</p>
+					</div>
+				</div>
 			</div>
-
-			<div class="d-y m-y-5">
-				<h4>Future</h4>
-				<%- posts.find(post => post.file === "future").content %>
+			<div>
+				<p>2018</p>
+				<div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/slash">Slash</a></h4>
+						<p>Created an efficient non-cryptographic hash function.</p>
+					</div>
+					<div>
+						<h4><a href="https://twitter.com/theicebot">Ice</a></h4>
+						<p>Created a bot that procedurally generates textual and visual art.</p>
+					</div>
+				</div>
 			</div>
-
-			<div class="d-y m-y-5">
-				<h4>Elsewhere</h4>
-				<%- posts.find(post => post.file === "elsewhere").content %>
+			<div>
+				<p>2017</p>
+				<div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/arc">Arc</a></h4>
+						<p>Created a basic hybrid kernel and bootloader from scratch.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/snip">Snip</a></h4>
+						<p>Created a URL shortener.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/spark">Spark</a></h4>
+						<p>Created a flexible machine learning library.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/coat">Coat</a></h4>
+						<p>Created a small reverse proxy and cache.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/marka">Marka</a></h4>
+						<p>Created a minimal markdown parser library.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/lock">Lock</a></h4>
+						<p>Created a website to share self-destructing messages.</p>
+					</div>
+					<div>
+						<h4><a href="https://github.com/kbrsh/voke">Voke</a></h4>
+						<p>Created a lightweight event-emitter library.</p>
+					</div>
+				</div>
 			</div>
-
-			<div class="d-y m-y-5">
-				<h4>Fun</h4>
-				<%- posts.find(post => post.file === "fun").content %>
+			<div>
+				<p>2016</p>
+				<div>
+					<div>
+						<h4><a href="https://kbrsh.github.io/colicious">Colicious</a></h4>
+						<p>Created a delicious color generator.</p>
+					</div>
+					<div>
+						<h4><a href="https://kbrsh.github.io/alter">Alter</a></h4>
+						<p>Created a text-to-image converter.</p>
+					</div>
+				</div>
 			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

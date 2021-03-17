@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Rhetoric | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,14 +26,13 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Rhetoric</b>
-				</p>
-
-				<p>Rhetoric is the art of persuading or making an argument. Due to some source of exigence, authors use:</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Rhetoric
+			</h4>
+			<p>Rhetoric is the art of persuading or making an argument. Due to some source of exigence, authors use:</p>
 <ul>
 <li><p>Paragraphs, or structure: <a href="https://en.wikipedia.org/wiki/List_of_narrative_forms">forms</a>, <a href="https://en.wikipedia.org/wiki/Literary_genre">genres</a>, <a href="https://en.wikipedia.org/wiki/Plot_(narrative)">plots</a>, <a href="https://en.wikipedia.org/wiki/Dispositio">dispositio</a></p></li><li><p>Sentences, or syntax: <a href="https://en.wikipedia.org/wiki/Scheme_(linguistics)">schemes</a></p></li><li><p>Words, or diction: <a href="https://en.wikipedia.org/wiki/Trope_(literature)">tropes</a></p></li></ul>
 <p>To depict:</p>
@@ -44,9 +43,8 @@
 <li><p>The author, or ethos: credentials, <a href="https://en.wikipedia.org/wiki/Anecdote">anecdotes</a></p></li><li><p>The subject, or logos: induction, deduction, logic</p></li><li><p>The audience, or pathos: sympathetic, antithetic, apathetic</p></li></ul>
 <p>to prove a point and fulfil their purpose.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

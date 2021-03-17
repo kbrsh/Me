@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Optimal virtual DOM | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,14 +26,13 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Optimal virtual DOM</b>
-				</p>
-
-				<p>The virtual DOM is an idea that stems from functional programming in user interfaces. On every update new UI trees replace the current one. The problem arises, however, when this idea of an immutable, declarative view is applied in the browser.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Optimal virtual DOM
+			</h4>
+			<p>The virtual DOM is an idea that stems from functional programming in user interfaces. On every update new UI trees replace the current one. The problem arises, however, when this idea of an immutable, declarative view is applied in the browser.</p>
 <p>The DOM is inherently imperative; it is updated through mutating method calls. A virtual DOM bridges the gap between declarative and imperative environments, accepting lightweight trees while mutating the DOM under the hood.</p>
 <p>Still, a fast implementation of the virtual DOM can be a difficult task. As I&#39;ve worked on <a href="https://kbrsh.github.io/moon">Moon</a>, I&#39;ve tried many different approaches to the diffing algorithm, with the most <a href="https://github.com/kbrsh/moon/commit/e7a7cd9ab427be89cb7efee70df86dfe0401d770">recent revision</a> being explained here. It&#39;s good at benchmarks because it sticks to one principle: avoiding the DOM as much as possible.</p>
 <p>There are many ways to approach a virtual DOM implementation, each building on top of the previous one to gain better performance.</p>
@@ -70,9 +69,8 @@
 <span class="token punctuation">}</span></code></pre><h4 id="conclusion">Conclusion</h4>
 <p>A diff between virtual nodes, accessing the DOM only for modification, is the fastest approach to a virtual DOM. It avoids the DOM as much as possible, favoring plain JavaScript objects instead, making reading and writing much cheaper. Combined with using constructors for virtual nodes, storing events on DOM nodes, and using a purely functional design, Moon&#39;s view driver is faster than ever before.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

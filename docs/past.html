@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Past | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,19 +26,17 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Past</b>
-				</p>
-
-				<p>This summer, I worked as a junior engineer on the core team at <a href="https://webflow.com">Webflow</a>, a company pushing the limits of no-code.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Past
+			</h4>
+			<p>This summer, I worked as a junior engineer on the core team at <a href="https://webflow.com">Webflow</a>, a company pushing the limits of no-code.</p>
 <p>Over the past few years, I&#39;ve been obsessed with open-source projects. Some highlights include <a href="https://github.com/kbrsh/wade">Wade</a>, a 1kb JavaScript text search library; <a href="https://kbrsh.github.io/wing">Wing</a>, a beautiful CSS library; and <a href="https://github.com/kbrsh/slash">Slash</a>, a small hash function.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

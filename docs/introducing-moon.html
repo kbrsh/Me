@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Introducing Moon | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,14 +26,13 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Introducing Moon</b>
-				</p>
-
-				<p>I used <a href="https://vuejs.org/">Vue</a> for a while, and it solved all of my problems beautifully. After a while, in late 2015, I began to notice some performance issues with my application. So I began to create something new, as a learning project. Hopefully to see how this DOM stuff actually works, and write a solution specifically for me.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Introducing Moon
+			</h4>
+			<p>I used <a href="https://vuejs.org/">Vue</a> for a while, and it solved all of my problems beautifully. After a while, in late 2015, I began to notice some performance issues with my application. So I began to create something new, as a learning project. Hopefully to see how this DOM stuff actually works, and write a solution specifically for me.</p>
 <p>After researching how Vue works under the hood, I came across <a href="https://facebook.github.io/react/">React</a>. It had the concept of a virtual DOM, and patching this with state updates in order to update the DOM. I also came across the fact that Vue didn’t use this idea at the time (it does now).</p>
 <p>I began writing a simple library, not meant for anyone else to use. It was a single file, with jumbled up code, attempting to make something. I just didn’t know what it was yet.</p>
 <p>After getting it to work, no matter what I did, it was <em>ridiculously slow!</em> So I gave up, and kept on using my slow implementation.</p>
@@ -70,9 +69,8 @@ to make something for myself, without all the bloated features of popular
 libraries I <em>didn’t need</em>. I also knew nothing about the DOM.</p>
 <p>It’s amazing how much I’ve learned since then.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

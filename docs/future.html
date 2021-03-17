@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-light">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<title>Future | Kabir Shah</title>
 
 		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 
 		
 
@@ -26,19 +26,17 @@
 	</head>
 
 	<body>
-		<div class="s-x-33 d-y p-x-10 p-y-10 m-y-7">
-			<div class="d-y m-y-5">
-				<p>
-					<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-					<b>Future</b>
-				</p>
-
-				<p>I avoid detailed plans for the future; they&#39;re boring. Ultimately, I strive to challenge assumptions and invent crazy ideas. My work should involve making meaningful experiences for humans, blurring the lines between science and art. Because while science might keep us living, art is what we live for.</p>
+		<canvas id="canvas"></canvas>
+		<div class="w-33 max-w-full p-10 space-y-5">
+			<h4>
+				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
+				Future
+			</h4>
+			<p>I avoid detailed plans for the future; they&#39;re boring. Ultimately, I strive to challenge assumptions and invent crazy ideas. My work should involve making meaningful experiences for humans, blurring the lines between science and art. Because while science might keep us living, art is what we live for.</p>
 <p>For now, I plan on pursuing higher-level education in computer science. The allure of other fields will keep me learning, at least until I become a rockstar or something.</p>
 
-			</div>
 		</div>
-
+		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>

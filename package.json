@@ -2,13 +2,14 @@
 	"name": "me",
 	"private": true,
 	"devDependencies": {
+		"autoprefixer": "^10.2.5",
 		"katex": "^0.11.1",
 		"prismjs": "^1.21.0",
-		"purgecss": "^2.3.0",
-		"sold": "^3.0.0"
+		"sold": "^3.0.0",
+		"tailwindcss-cli": "^0.1.2"
 	},
 	"scripts": {
-		"build": "sold"
+		"build": "sold; NODE_ENV='production' tailwindcss build ./docs/css/index.css -o ./docs/css/index.css"
 	},
 	"repository": {
 		"type": "git",

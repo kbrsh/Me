@@ -2,7 +2,6 @@ const Sold = require("sold");
 const marked = require("marked");
 const Prism = require("prismjs");
 const katex = require("katex");
-const PurgeCSS = require("purgecss").PurgeCSS;
 const fs = require("fs");
 const exec = require("child_process").execSync;
 
@@ -48,14 +47,6 @@ Sold({
 	destination: "docs",
 	feed: {},
 	marked: {renderer}
-});
-
-new PurgeCSS().purge({
-	content: ["docs/*.html"],
-	css: ["lib/*.css", "public/css/*.css"],
-	whitelistPatterns: [/^theme/, /focus/]
-}).then(css => {
-	fs.writeFileSync("./docs/css/index.min.css", css.map(file => file.css).join(""));
 });
 
 exec("cp -r ./public/* ./docs");
