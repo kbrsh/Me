@@ -4,6 +4,10 @@ uniform float width;
 uniform float height;
 uniform float seed;
 
+float rand(vec2 co) {
+	return fract(sin(dot(co.xy, vec2(12.9898, 78.233)))*43758.5453);
+}
+
 vec3 mod289(vec3 x) {
 	return x - floor(x * (1.0 / 289.0)) * 289.0;
 }
@@ -57,6 +61,6 @@ void main() {
 	vec3 c2 = hsl2rgb(vec3(cs + 1./7., 1., 45./49.));
 	vec3 c = mix(c1, c2, n);
 
-	gl_FragColor = vec4(c, n*3./7. + 4./7.);
+	gl_FragColor = vec4(c, (n*2./7. + rand(st)*1./7. + 4./7.));
 	//gl_FragColor = vec4(c, snoise(st*n + seed)*3./7. + 4./7.);
 }
