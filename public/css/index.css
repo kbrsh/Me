@@ -81,7 +81,7 @@ code {
 	color: hsl(206, 14%, 43%);
 }
 
-.token.string {
+.token.string, .token.string-property {
 	color: hsl(103, 20%, 49%);
 }
 

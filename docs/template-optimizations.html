@@ -40,10 +40,10 @@
 <p>While the virtual DOM is lightweight, creating the whole tree for every render can use a lot of memory and impact performance. That is why it is important for compilers to be able to optimize templates and reuse static virtual nodes, as they do not need to be recreated on every render.</p>
 <p>The virtual DOM consists of virtual nodes, which look something like:</p>
 <pre><code><span class="token punctuation">{</span>
-  type<span class="token operator">:</span> <span class="token string">"div"</span><span class="token punctuation">,</span> <span class="token comment">// Type of element</span>
-  props<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// Properties (attributes, directives, DOM properties),</span>
-  data<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// Internal data (SVG utilities, event listeners)</span>
-  children<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment">// Children virtual nodes</span>
+  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">"div"</span><span class="token punctuation">,</span> <span class="token comment">// Type of element</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// Properties (attributes, directives, DOM properties),</span>
+  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// Internal data (SVG utilities, event listeners)</span>
+  <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment">// Children virtual nodes</span>
 <span class="token punctuation">}</span></code></pre><p>Moon and Vue both compare a new virtual DOM with the old one, and update the DOM with a minimum amount of transformations. They also both have different ways of creating the virtual DOM.</p>
 <p>Both provide a function to create virtual nodes. These functions are responsible for transforming a set of arguments into an object containing all of the required data for the current state of the view.</p>
 <p>In Vue, a developer-friendly function is used to define a virtual DOM tree. This function is extremely flexible and can accept a variety of arguments with multiple types. This flexibility requires a normalization step at runtime.</p>
@@ -55,8 +55,8 @@
     <span class="token string">"Text"</span><span class="token punctuation">,</span>
     <span class="token function">_c</span><span class="token punctuation">(</span><span class="token string">"h1"</span><span class="token punctuation">,</span> <span class="token string">"Heading"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
     <span class="token function">_c</span><span class="token punctuation">(</span>FooComponent<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-      props<span class="token operator">:</span> <span class="token punctuation">{</span>
-        bar<span class="token operator">:</span> <span class="token string">"baz"</span>
+      <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">bar</span><span class="token operator">:</span> <span class="token string">"baz"</span>
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span>
   <span class="token punctuation">]</span>
@@ -68,9 +68,9 @@
   <span class="token function">m</span><span class="token punctuation">(</span>
     <span class="token string">"Foo"</span><span class="token punctuation">,</span>
     <span class="token punctuation">{</span>
-      props<span class="token operator">:</span> <span class="token punctuation">{</span>
-        attrs<span class="token operator">:</span> <span class="token punctuation">{</span>
-          bar<span class="token operator">:</span> <span class="token string">"baz"</span>
+      <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">attrs</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">bar</span><span class="token operator">:</span> <span class="token string">"baz"</span>
         <span class="token punctuation">}</span>
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -204,7 +204,7 @@
   <span class="token keyword">with</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token function">_c</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
       <span class="token function">_c</span><span class="token punctuation">(</span><span class="token string">"h1"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">_v</span><span class="token punctuation">(</span><span class="token string">"Static Heading"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token function">_c</span><span class="token punctuation">(</span><span class="token string">"p"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> attrs<span class="token operator">:</span> <span class="token punctuation">{</span> foo<span class="token operator">:</span> foo <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">_v</span><span class="token punctuation">(</span><span class="token string">"Dynamic Paragraph"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+      <span class="token function">_c</span><span class="token punctuation">(</span><span class="token string">"p"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">attrs</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">foo</span><span class="token operator">:</span> foo <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">_v</span><span class="token punctuation">(</span><span class="token string">"Dynamic Paragraph"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre><p>Here Vue does not optimize the static <code>h1</code> element or the static paragraph text element.</p>
@@ -225,7 +225,7 @@
 
   <span class="token keyword">return</span> <span class="token function">m</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
     staticNodes<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// Cached heading</span>
-    <span class="token function">m</span><span class="token punctuation">(</span><span class="token string">"p"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> attrs<span class="token operator">:</span> <span class="token punctuation">{</span> foo<span class="token operator">:</span> foo <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>staticNodes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// Cached text</span>
+    <span class="token function">m</span><span class="token punctuation">(</span><span class="token string">"p"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">attrs</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">foo</span><span class="token operator">:</span> foo <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>staticNodes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// Cached text</span>
   <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre><p>Moon detects the static text of the paragraph and the static <code>h1</code> node. It hoists both elements out of the render function. When updating the DOM, these elements will be skipped because they have the same reference.</p>
 <h4 id="conditionals">Conditionals</h4>
@@ -268,8 +268,8 @@
   <span class="token keyword">with</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token function">_c</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
       <span class="token function">_c</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-        on<span class="token operator">:</span> <span class="token punctuation">{</span>
-          click<span class="token operator">:</span> fooMethod
+        <span class="token literal-property property">on</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">click</span><span class="token operator">:</span> fooMethod
         <span class="token punctuation">}</span>
       <span class="token punctuation">}</span><span class="token punctuation">)</span>
     <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -289,8 +289,8 @@
           <span class="token string">"button"</span><span class="token punctuation">,</span>
           <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
           <span class="token punctuation">{</span>
-            events<span class="token operator">:</span> <span class="token punctuation">{</span>
-              click<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token literal-property property">events</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">click</span><span class="token operator">:</span> <span class="token punctuation">[</span>
                 <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
                   <span class="token function">fooMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                 <span class="token punctuation">}</span>

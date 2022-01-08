@@ -9,7 +9,7 @@
 		"tailwindcss-cli": "^0.1.2"
 	},
 	"scripts": {
-		"build": "sold; NODE_ENV='production' tailwindcss build ./docs/css/index.css -o ./docs/css/index.css"
+		"build": "sold; NODE_ENV='production' tailwindcss build -i ./docs/css/index.css -o ./docs/css/index.css"
 	},
 	"repository": {
 		"type": "git",

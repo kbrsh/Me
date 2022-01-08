@@ -79,9 +79,9 @@
         <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token punctuation">{</span>
-            first<span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
-            last<span class="token operator">:</span> <span class="token string">"Doe"</span><span class="token punctuation">,</span>
-            middle<span class="token operator">:</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.7</span> <span class="token operator">?</span> <span class="token string">"Bob"</span> <span class="token operator">:</span> <span class="token keyword">null</span>
+            <span class="token literal-property property">first</span><span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">last</span><span class="token operator">:</span> <span class="token string">"Doe"</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">middle</span><span class="token operator">:</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.7</span> <span class="token operator">?</span> <span class="token string">"Bob"</span> <span class="token operator">:</span> <span class="token keyword">null</span>
         <span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
@@ -111,9 +111,9 @@
 
 <span class="token comment">// Simulate the fetching of a user.</span>
 <span class="token keyword">const</span> <span class="token function-variable function">getUser</span> <span class="token operator">=</span> <span class="token parameter">id</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
-    first<span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
-    last<span class="token operator">:</span> <span class="token string">"Doe"</span><span class="token punctuation">,</span>
-    middle<span class="token operator">:</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.7</span> <span class="token operator">?</span> <span class="token string">"Bob"</span> <span class="token operator">:</span> <span class="token keyword">null</span>
+    <span class="token literal-property property">first</span><span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">last</span><span class="token operator">:</span> <span class="token string">"Doe"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">middle</span><span class="token operator">:</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.7</span> <span class="token operator">?</span> <span class="token string">"Bob"</span> <span class="token operator">:</span> <span class="token keyword">null</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Simulate the fetching of a middle name.</span>
@@ -132,9 +132,9 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p>Keeping the same example, let&#39;s say we want to keep track of log messages. In a functional language, you can&#39;t modify a global variable to keep track of all of the messages. Instead, each function can return an output along with a log message.</p>
 <pre><code><span class="token keyword">const</span> <span class="token function-variable function">getId</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token string">"Got an id of 7."</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token function-variable function">getUser</span> <span class="token operator">=</span> <span class="token parameter">id</span> <span class="token operator">=></span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
-    first<span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
-    last<span class="token operator">:</span> <span class="token string">"Doe"</span><span class="token punctuation">,</span>
-    middle<span class="token operator">:</span> <span class="token string">"Bob"</span>
+    <span class="token literal-property property">first</span><span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">last</span><span class="token operator">:</span> <span class="token string">"Doe"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">middle</span><span class="token operator">:</span> <span class="token string">"Bob"</span>
 <span class="token punctuation">}</span><span class="token punctuation">,</span> id<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">" Got a user with name John Bob Doe."</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token function-variable function">getMiddleName</span> <span class="token operator">=</span> <span class="token parameter">user</span> <span class="token operator">=></span> <span class="token punctuation">[</span>user<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>middle<span class="token punctuation">,</span> user<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">" Got the middle name of a user."</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 
@@ -152,9 +152,9 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <pre><code><span class="token comment">// Get various data from a user.</span>
 <span class="token keyword">const</span> <span class="token function-variable function">getId</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token string">"Got an id of 7."</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token function-variable function">getUser</span> <span class="token operator">=</span> <span class="token parameter">id</span> <span class="token operator">=></span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
-    first<span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
-    last<span class="token operator">:</span> <span class="token string">"Doe"</span><span class="token punctuation">,</span>
-    middle<span class="token operator">:</span> <span class="token string">"Bob"</span>
+    <span class="token literal-property property">first</span><span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">last</span><span class="token operator">:</span> <span class="token string">"Doe"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">middle</span><span class="token operator">:</span> <span class="token string">"Bob"</span>
 <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">"Got a user with name John Bob Doe."</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token function-variable function">getMiddleName</span> <span class="token operator">=</span> <span class="token parameter">user</span> <span class="token operator">=></span> <span class="token punctuation">[</span>user<span class="token punctuation">.</span>middle<span class="token punctuation">,</span> <span class="token string">"Got the middle name of a user."</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 
@@ -173,9 +173,9 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token comment">// => ["Bob", "Got an id of 7. Got a user with name John Bob Doe. Got the middle name of a user."]</span></code></pre><h4 id="global-environment">Global Environment</h4>
 <p>Let&#39;s say we have a global object fetched from somewhere, and it holds data for a user.</p>
 <pre><code><span class="token punctuation">{</span>
-    id<span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
-    first<span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
-    last<span class="token operator">:</span> <span class="token string">"Doe"</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">first</span><span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">last</span><span class="token operator">:</span> <span class="token string">"Doe"</span>
 <span class="token punctuation">}</span></code></pre><p>Along with that, we have a calculation based on this environment.</p>
 <pre><code><span class="token keyword">const</span> <span class="token function-variable function">getInitials</span> <span class="token operator">=</span> <span class="token parameter">environment</span> <span class="token operator">=></span> environment<span class="token punctuation">.</span>first<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> environment<span class="token punctuation">.</span>last<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token function-variable function">getName</span> <span class="token operator">=</span> <span class="token parameter">initials</span> <span class="token operator">=></span> <span class="token parameter">environment</span> <span class="token operator">=></span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>initials<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>environment<span class="token punctuation">.</span>first<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>environment<span class="token punctuation">.</span>last<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
@@ -215,9 +215,9 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
 <span class="token comment">// Since `identity` is a function of an environment, we can pass it any environment.</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">identity</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
-    id<span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
-    first<span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
-    last<span class="token operator">:</span> <span class="token string">"Doe"</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">first</span><span class="token operator">:</span> <span class="token string">"John"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">last</span><span class="token operator">:</span> <span class="token string">"Doe"</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// => 7 JD John Doe</span></code></pre><h4 id="passing-state">Passing State</h4>
 <p>Let&#39;s say we have a state for holding the seed of a random number generator.</p>
