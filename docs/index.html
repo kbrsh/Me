@@ -1,174 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="composer of functions">
-		<meta name="author" content="Kabir Shah">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="composer of functions" />
+      <meta name="author" content="Kabir Shah" />
 
-		<title>Kabir Shah</title>
+      <title>Kabir Shah</title>
 
-		<link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png"/>
-		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+      <link id="favicon" rel="shortcut icon" href="/images/favicon-dark.png" />
+      <link rel="stylesheet" type="text/css" href="/css/index.css" />
 
-		<script>
-			(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
+      <script>
+         (function (i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            (i[r] =
+               i[r] ||
+               function () {
+                  (i[r].q = i[r].q || []).push(arguments);
+               }),
+               (i[r].l = 1 * new Date());
+            (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+         })(
+            window,
+            document,
+            "script",
+            "https://www.google-analytics.com/analytics.js",
+            "ga"
+         );
 
-			ga("create", "UA-70792533-4", "auto");
-			ga("send", "pageview");
-		</script>
-	</head>
+         ga("create", "UA-70792533-4", "auto");
+         ga("send", "pageview");
+      </script>
+   </head>
 
-	<body>
-		<canvas id="canvas"></canvas>
-		<div class="w-33 max-w-full p-10 space-y-5">
-			<h4>
-				<a href="/"><img id="logo" src="/images/light-logo.svg" alt="Personal Logo"/></a>
-				Kabir
-			</h4>
-			<p>I'm a high school senior in California studying computer science in our engineering academy. I teach students to code and host hackathons at <a href="https://cohack.co">Cohack</a>. I explore user interfaces and compiler theory with <a href="https://moonjs.org">Moon</a>.</p>
-			<p>Last summer, I interned as a junior engineer on the core team at <a href="https://webflow.com">Webflow</a>, a company pushing the limits of no-code.</p>
-			<p>Over the past few years, I've been obsessed with open-source projects. Some highlights include <a href="https://github.com/kbrsh/wade">Wade</a>, a 1kb JavaScript text search library; <a href="https://kbrsh.github.io/wing">Wing</a>, a beautiful CSS library; and <a href="https://github.com/kbrsh/slash">Slash</a>, a small hash function.</p>
-			<p>Find my writing on my <a href="/blog">blog</a>, my thoughts on <a href="https://twitter.com/kbrshah">Twitter</a>, and my code on <a href="https://github.com/kbrsh">GitHub</a>. Reach out by <a href="mailto:iamkbrsh@gmail.com">email</a>.</p>
-		</div>
-		<div class="experience">
-			<div>
-				<p>Now</p>
-				<div>
-					<div>
-						<h4><a href="https://cohack.co">Cohack</a></h4>
-						<p>Teaching students to code and hosting hackathons.</p>
-					</div>
-					<div>
-						<h4><a href="https://moonjs.org">Moon</a></h4>
-						<p>Architecting and implementing a UI library and compiler.</p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<p>2021</p>
-				<div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/colex">Colex</a></h4>
-						<p>Created an AI-powered website capable of changing the level of detail of text.</p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<p>2020</p>
-				<div>
-					<div>
-						<h4><a href="https://webflow.com">Webflow</a></h4>
-						<p>Worked on core product and UI with React; applied FP, data structures, PLT, and optimization.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/grain">Grain</a></h4>
-						<p>Created a library for structural web application styles.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/nox">Nox</a></h4>
-						<p>Created an elegant color scheme and Vim configuration.</p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<p>2019</p>
-				<div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/wade">Wade</a></h4>
-						<p>Created a 1kb JavaScript search library and algorithm.</p>
-					</div>
-					<div>
-						<h4><a href="https://kbrsh.github.io/wing">Wing</a></h4>
-						<p>Created a beautiful CSS framework for minimalists.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/sold">Sold</a></h4>
-						<p>Created a static site generator for blogging.</p>
-					</div>
-					<div>
-						<h4><a href="https://kbrsh.github.io/throw">Throw</a></h4>
-						<p>Created a website that stores throwaway notes in the URL.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/valon">Valon</a></h4>
-						<p>Conceptualized a constructed language based on functions.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kabir-shah/conode">Conode</a></h4>
-						<p>Created a collaborative project-based learning tool.</p>
-					</div>
-					<div>
-						<h4><a href="https://upshot.github.io">Upshot</a></h4>
-						<p>Created a tool to calculate grades after an assignment.</p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<p>2018</p>
-				<div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/slash">Slash</a></h4>
-						<p>Created an efficient non-cryptographic hash function.</p>
-					</div>
-					<div>
-						<h4><a href="https://twitter.com/theicebot">Ice</a></h4>
-						<p>Created a bot that procedurally generates textual and visual art.</p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<p>2017</p>
-				<div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/arc">Arc</a></h4>
-						<p>Created a basic hybrid kernel and bootloader from scratch.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/snip">Snip</a></h4>
-						<p>Created a URL shortener.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/spark">Spark</a></h4>
-						<p>Created a flexible machine learning library.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/coat">Coat</a></h4>
-						<p>Created a small reverse proxy and cache.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/marka">Marka</a></h4>
-						<p>Created a minimal markdown parser library.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/lock">Lock</a></h4>
-						<p>Created a website to share self-destructing messages.</p>
-					</div>
-					<div>
-						<h4><a href="https://github.com/kbrsh/voke">Voke</a></h4>
-						<p>Created a lightweight event-emitter library.</p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<p>2016</p>
-				<div>
-					<div>
-						<h4><a href="https://kbrsh.github.io/colicious">Colicious</a></h4>
-						<p>Created a delicious color generator.</p>
-					</div>
-					<div>
-						<h4><a href="https://kbrsh.github.io/alter">Alter</a></h4>
-						<p>Created a text-to-image converter.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script type="x-shader/x-fragment" id="shader-gradient" src="/shaders/gradient.frag"></script>
-		<script type="text/javascript" src="/js/index.js"></script>
-	</body>
+   <body>
+      <canvas id="canvas"></canvas>
+      <div class="h-screen flex justify-center items-center">
+         <div class="w-33 max-w-full p-10">
+            <a href="/"
+               ><img
+                  class="w-full opacity-70"
+                  src="/images/full-logo.svg"
+                  alt="Logo"
+            /></a>
+            <p class="text-gray-48 opacity-50">
+               I'm a high school senior in California studying computer science
+               in our engineering academy. I teach students to code and host
+               hackathons at <a href="https://cohack.co">Cohack</a>. I explore
+               user interfaces and compiler theory with
+               <a href="https://moonjs.org">Moon</a>.
+            </p>
+            <div class="py-6 flex justify-between text-gray-48 opacity-50">
+               <a href="/blog">blog</a>
+               <a href="https://github.com/kbrsh">code</a>
+               <a href="https://twitter.com/kbrshah">thoughts</a>
+               <a href="mailto:kabir@kabir.sh">kabir@kabir.sh</a>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="/js/lib/three.min.js"></script>
+      <script
+         type="x-shader/x-fragment"
+         id="shader-gradient"
+         src="/shaders/gradient.frag"
+      ></script>
+      <script type="text/javascript" src="/js/index.js"></script>
+   </body>
 </html>

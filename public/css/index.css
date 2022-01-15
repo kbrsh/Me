@@ -3,140 +3,45 @@
 @tailwind utilities;
 
 :root {
-	--grain-scale: 1;
+   --grain-scale: 1;
 }
 
 @media (min-width: 512px) {
-	:root {
-		--grain-scale: calc(9/7);
-	}
+   :root {
+      --grain-scale: calc(9 / 7);
+   }
 }
 
 html {
-	font-family: "Inter", "Helvetica", "Arial";
-	-webkit-font-smoothing: antialiased;
-	@apply text-5;
-}
-
-h4 {
-	@apply text-5;
-}
-
-p {
-	@apply text-gray-21;
+   font-family: "Inter", "Helvetica", "Arial";
+   -webkit-font-smoothing: antialiased;
+   background: url("/images/noise.png") no-repeat center center fixed;
+   background-size: cover;
+   background-blend-mode: overlay;
+   @apply text-5;
 }
 
 a {
-	@apply underline;
-}
-
-pre code {
-	white-space: pre-wrap;
-	word-break: break-word;
-}
-
-code {
-	font-family: "Inconsolata", monospace;
-	@apply text-5;
-}
-
-#logo {
-	display: inline;
-	height: 1.5em;
-	vertical-align: bottom;
+   @apply underline;
 }
 
 #canvas {
-	position: fixed;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-}
-
-.experience {
-	@apply max-w-full p-10;
-}
-
-.experience > div {
-	@apply flex py-5;
-}
-
-.experience > div > p {
-	@apply flex-shrink-0 w-15;
-}
-
-.experience > div > div {
-	@apply flex flex-wrap -m-5;
-}
-
-.experience > div > div > div {
-	@apply w-20 m-5;
+   position: fixed;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+   top: -200px;
+   left: -200px;
+   @apply opacity-70;
 }
 
 :focus {
-	outline-color: hsl(0, 0%, 86%);
-}
-
-code {
-	color: hsl(206, 14%, 43%);
-}
-
-.token.string, .token.string-property {
-	color: hsl(103, 20%, 49%);
-}
-
-.token.keyword {
-	color: hsl(294, 20%, 49%);
-}
-
-.token.number, .token.boolean, .token.attr-name {
-	color: hsl(22, 29%, 49%);
-}
-
-.token.function, .token.tag {
-	color: hsl(206, 31%, 55%);
-}
-
-.token.attr-value {
-	color: hsl(206, 31%, 55%);
-}
-
-.token.comment {
-	color: hsl(206, 14%, 57%);
-}
-
-.katex {
-	@apply text-5;
-}
-
-.katex-display {
-	@apply w-26;
+   outline-color: hsl(0, 0%, 86%);
 }
 
 @font-face {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 400;
-	src: url("/fonts/Inter-Regular.otf") format("opentype");
-}
-
-@font-face {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 700;
-	src: url("/fonts/Inter-Bold.otf") format("opentype");
-}
-
-@font-face {
-	font-family: "Inconsolata";
-	font-style: normal;
-	font-weight: 400;
-	src: url("/fonts/Inconsolata-Regular.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "Inconsolata";
-	font-style: normal;
-	font-weight: 700;
-	src: url("/fonts/Inconsolata-Bold.ttf") format("truetype");
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 400;
+   src: url("/fonts/Inter-Regular.otf") format("opentype");
 }
