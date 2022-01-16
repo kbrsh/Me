@@ -758,9 +758,9 @@ video {
   text-transform: lowercase;
 }
 
-.text-gray-48 {
+.text-gray-100 {
   --tw-text-opacity: 1;
-  color: hsla(0, 0%, 97.95918367346938%, var(--tw-text-opacity));
+  color: hsla(0, 0%, 100%, var(--tw-text-opacity));
 }
 
 .opacity-50 {

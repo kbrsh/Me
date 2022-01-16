@@ -12,7 +12,7 @@ const makeGrid = (width, height) => {
             v: 1 / (height - 1),
             h: Math.random(),
             s: lerp(Math.random(), 0, 0.5),
-            l: lerp(Math.random(), 0, 0.5),
+            l: lerp(Math.random(), 0, 0.5)
          })
       }
    }
@@ -45,7 +45,7 @@ const dividePoint = (U, V, X, Y, H, S, L) => {
 
    return {
       vertex: [x, y, 0],
-      color: new THREE.Color().setHSL(h, s, l).toArray(),
+      color: new THREE.Color().setHSL(h, s, l).toArray()
    }
 }
 
@@ -170,7 +170,7 @@ const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 1000)
 camera.position.z = 5
 const renderer = new THREE.WebGLRenderer({
    canvas: document.getElementById("canvas"),
-   alpha: true,
+   alpha: true
 })
 renderer.setSize(window.innerWidth + 400, window.innerHeight + 400)
 renderer.setScissor(200, 200, window.innerWidth, window.innerHeight)
@@ -178,7 +178,7 @@ renderer.setScissorTest(true)
 const geometry = new THREE.BufferGeometry()
 const material = new THREE.MeshBasicMaterial({
    color: 0xffffff,
-   vertexColors: true,
+   vertexColors: true
 })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
