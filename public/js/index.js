@@ -8,11 +8,11 @@ const makeGrid = (width, height) => {
          grid.push({
             x: lerp(x / (width - 1), -1, 1),
             y: lerp(y / (height - 1), -1, 1),
-            u: 2 / (width - 1),
-            v: 2 / (height - 1),
+            u: 1 / (width - 1),
+            v: 1 / (height - 1),
             h: Math.random(),
-            s: Math.random(),
-            l: Math.random(),
+            s: lerp(Math.random(), 0, 0.5),
+            l: lerp(Math.random(), 0, 0.5)
          })
       }
    }
@@ -20,53 +20,32 @@ const makeGrid = (width, height) => {
    return grid
 }
 
-const Mh = new THREE.Matrix4()
+const H = new THREE.Matrix4()
 // prettier-ignore
-Mh.set(
+H.set(
    2, -2, 1, 1,
    -3, 3, -2, -1,
    0, 0, 1, 0,
    1, 0, 0, 0
 );
 
-const MhT = Mh.clone().transpose()
+const HT = H.clone().transpose()
 
-const dividePoint = (u, v, x, y, h, s, l) => {
-   const vp = new THREE.Vector4(v * v * v, v * v, v, 1)
-
-   const xp = vp.dot(
-      new THREE.Vector4(u * u * u, u * u, u, 1).applyMatrix4(
-         x.clone().transpose().premultiply(Mh).multiply(MhT)
-      )
+const dividePointComponent = (U, V, X) =>
+   V.dot(
+      U.clone().applyMatrix4(X.clone().transpose().premultiply(H).multiply(HT))
    )
 
-   const yp = vp.dot(
-      new THREE.Vector4(u * u * u, u * u, u, 1).applyMatrix4(
-         y.clone().transpose().premultiply(Mh).multiply(MhT)
-      )
-   )
-
-   const hp = vp.dot(
-      new THREE.Vector4(u * u * u, u * u, u, 1).applyMatrix4(
-         h.clone().transpose().premultiply(Mh).multiply(MhT)
-      )
-   )
-
-   const sp = vp.dot(
-      new THREE.Vector4(u * u * u, u * u, u, 1).applyMatrix4(
-         s.clone().transpose().premultiply(Mh).multiply(MhT)
-      )
-   )
-
-   const lp = vp.dot(
-      new THREE.Vector4(u * u * u, u * u, u, 1).applyMatrix4(
-         l.clone().transpose().premultiply(Mh).multiply(MhT)
-      )
-   )
+const dividePoint = (U, V, X, Y, H, S, L) => {
+   const x = dividePointComponent(U, V, X)
+   const y = dividePointComponent(U, V, Y)
+   const h = dividePointComponent(U, V, H)
+   const s = dividePointComponent(U, V, S)
+   const l = dividePointComponent(U, V, L)
 
    return {
-      vertex: [xp, yp, 0],
-      color: new THREE.Color().setHSL(hp, sp, lp).toArray(),
+      vertex: [x, y, 0],
+      color: new THREE.Color().setHSL(h, s, l).toArray()
    }
 }
 
@@ -80,64 +59,61 @@ const divideGrid = (grid, divisions) => {
          const p10 = grid[y * height + x + 1]
          const p11 = grid[(y + 1) * height + x + 1]
 
-         const xp = new THREE.Matrix4()
+         const X = new THREE.Matrix4()
          // prettier-ignore
-         xp.set(
+         X.set(
             p00.x, p01.x, p00.v, p01.v,
             p10.x, p11.x, p10.v, p11.v,
             p00.u, p01.u, 0, 0,
             p10.u, p11.u, 0, 0
          )
 
-         const yp = new THREE.Matrix4()
+         const Y = new THREE.Matrix4()
          // prettier-ignore
-         yp.set(
+         Y.set(
             p00.y, p01.y, p00.v, p01.v,
             p10.y, p11.y, p10.v, p11.v,
             p00.u, p01.u, 0, 0,
             p10.u, p11.u, 0, 0
          )
 
-         const hp = new THREE.Matrix4()
+         const H = new THREE.Matrix4()
          // prettier-ignore
-         hp.set(
+         H.set(
             p00.h, p01.h, 0, 0,
             p10.h, p11.h, 0, 0,
             0, 0, 0, 0,
             0, 0, 0, 0
          )
 
-         const sp = new THREE.Matrix4()
+         const S = new THREE.Matrix4()
          // prettier-ignore
-         sp.set(
+         S.set(
             p00.s, p01.s, 0, 0,
             p10.s, p11.s, 0, 0,
             0, 0, 0, 0,
             0, 0, 0, 0
          )
 
-         const lp = new THREE.Matrix4()
+         const L = new THREE.Matrix4()
          // prettier-ignore
-         lp.set(
+         L.set(
             p00.l, p01.l, 0, 0,
             p10.l, p11.l, 0, 0,
             0, 0, 0, 0,
             0, 0, 0, 0
          )
 
-         for (let u = 0; u < divisions; u++) {
-            for (let v = 0; v < divisions; v++) {
+         for (let ui = 0; ui < divisions; ui++) {
+            for (let vi = 0; vi < divisions; vi++) {
+               const u = ui / (divisions - 1)
+               const U = new THREE.Vector4(u * u * u, u * u, u, 1)
+               const v = vi / (divisions - 1)
+               const V = new THREE.Vector4(v * v * v, v * v, v, 1)
+
                newGrid[
-                  (y * divisions + v) * dividedHeight + (x * divisions + u)
-               ] = dividePoint(
-                  u / (divisions - 1),
-                  v / (divisions - 1),
-                  xp,
-                  yp,
-                  hp,
-                  sp,
-                  lp
-               )
+                  (y * divisions + vi) * dividedHeight + (x * divisions + ui)
+               ] = dividePoint(U, V, X, Y, H, S, L)
             }
          }
       }
@@ -194,7 +170,7 @@ const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 1000)
 camera.position.z = 5
 const renderer = new THREE.WebGLRenderer({
    canvas: document.getElementById("canvas"),
-   alpha: true,
+   alpha: true
 })
 renderer.setSize(window.innerWidth + 400, window.innerHeight + 400)
 renderer.setScissor(200, 200, window.innerWidth, window.innerHeight)
@@ -202,7 +178,7 @@ renderer.setScissorTest(true)
 const geometry = new THREE.BufferGeometry()
 const material = new THREE.MeshBasicMaterial({
    color: 0xffffff,
-   vertexColors: true,
+   vertexColors: true
 })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
